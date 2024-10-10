@@ -86,6 +86,11 @@ const config: Config = {
           label: "SUTC",
           position: "right",
         },
+        {
+          href: "https://sutc.semantic-treehouse.nl/",
+          label: "STH",
+          position: "right"
+        },
       ],
     },
     footer: {
