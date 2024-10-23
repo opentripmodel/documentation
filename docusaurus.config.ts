@@ -1,6 +1,7 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
+// import type * as Redocusaurus from 'redocusaurus';
 
 const config: Config = {
   title: "Open Trip Model",
@@ -52,7 +53,27 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
+    // [
+    //   'redocusaurus',
+    //   {
+    //     // Plugin Options for loading OpenAPI files
+    //     specs: [
+    //       // Pass it a path to a local OpenAPI YAML file
+    //       {
+    //         // Redocusaurus will automatically bundle your spec into a single file during the build
+    //         spec: 'api/OTM_OAS.yaml',
+    //         route: '/docs/api/',
+    //       },
+    //     ],
+    //     // Theme Options for modifying how redoc renders them
+    //     theme: {
+    //       // Change with your site colors
+    //       primaryColor: '#1890ff',
+    //     },
+    //   },
+    // ] satisfies Redocusaurus.PresetEntry,
   ],
+  
 
   themeConfig: {
     // Replace with your project's social card
@@ -64,7 +85,7 @@ const config: Config = {
       },
       items: [
         {
-          to: "/",
+          to: "/about",
           label: "About",
           position: "left",
         },
@@ -77,6 +98,11 @@ const config: Config = {
         { to: "/blog", label: "Blog", position: "left" },
         { to: "/api", label: "API", position: "left" },
         {
+          href: "https://sutc.semantic-treehouse.nl/",
+          label: "STH",
+          position: "right",
+        },
+        {
           href: "https://github.com/opentripmodel",
           label: "GitHub",
           position: "right",
@@ -85,11 +111,6 @@ const config: Config = {
           href: "https://www.sutc.nl/",
           label: "SUTC",
           position: "right",
-        },
-        {
-          href: "https://sutc.semantic-treehouse.nl/",
-          label: "STH",
-          position: "right"
         },
       ],
     },
