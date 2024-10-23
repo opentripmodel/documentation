@@ -1,6 +1,6 @@
 ---
 title: OTM Profiles
-
+id: otm_profiles
 ---
 
 OTM profiles
@@ -12,9 +12,14 @@ This approach makes OTM flexible while remaining quite simple and small. The dat
 
 The various profiles are currently still being discussed and will be thoroughly documented with examples once finalized.
 
+:::warning
+Zijn de profiles die hierboven genoemd nu wel final?
+Is de profile setup hieronder nu vast voor elk profile
+:::
+
 Each profile uses the same setup:
 
-1. It starts of with the what and the why of the profile in a few sentences. So you can quickly determine whether this profile is of intersted to you.
+1. It starts of with the what and the why of the profile in a few sentences. So you can quickly determine whether this profile is of interest to you.
 2. Then it provides the general structure, which entities are involved, and what data in these entities are present.
 3. Since this all fairly abstract, it then continues with an example. This example is first provided in text, and then worked out in detail in actual JSON messages.
 4. If applicable, links on how to validate JSON messages using the validation tool are present.
