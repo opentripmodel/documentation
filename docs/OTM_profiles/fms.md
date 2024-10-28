@@ -1,8 +1,8 @@
 Fleet Management Systems
 ================================
 
-:::caution
-This page is still work in progress
+:::warning
+This profile is still a work in progress.
 :::
 
 Overview

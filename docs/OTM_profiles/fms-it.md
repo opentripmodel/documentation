@@ -1,6 +1,9 @@
 FMS-ITS 
 ======================
 
+:::warning
+This profile is still a work in progress.
+:::
 
 :::caution
 FMS ITs is an implementation of the FMS profile. It uses OTM5 for communication between
