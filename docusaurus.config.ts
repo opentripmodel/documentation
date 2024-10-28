@@ -85,7 +85,7 @@ const config: Config = {
       },
       items: [
         {
-          to: "/about",
+          to: "/",
           label: "About",
           position: "left",
         },
