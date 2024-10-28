@@ -25,8 +25,8 @@ A typical OTM Location entity consists of the following elements:
 - Constraints of the school zone, such as applicable traffic measures
 
 
-Typical constraints for School Zones
-------------------------------------
+### Typical constraints for School Zones
+
 Constraints for school zones govern their operational regulations and can vary in their enforcement status. They can either be enforced, meaning the regulations they specify must be adhered to, or not-enforced, indicating that compliance is optional.
 
 These constraints also include recurring start and end times, which define the periods during which the regulations are applicable. For example, school zones might have specific start and end times corresponding to school hours, such as from 08:30 to 12:30 and from 13:30 to 15:30 on weekdays. These time frames can recur on a regular basis, such as weekly, and may exclude certain dates, like holidays or vacation periods. This recurring nature ensures that the regulations align with the operational schedule of the school zone over time.

@@ -46,4 +46,4 @@ Since this might not give enough insight, we can also the present the hierarchy 
 Example
 -------
 
-To see examples of this profile go to the [example page](../examples.md#trips).
+To see an example of this profile go to the [example page](../Examples/examples.md).
