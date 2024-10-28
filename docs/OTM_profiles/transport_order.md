@@ -8,7 +8,7 @@ This profile is still a work in progress.
 Overview
 --------
 
-The very first step of transporting goods from one place to another starts with the _transport order_. It is concerned with what needs to be transported under what constraints (i.e. before a certain date, or below a certain temperature). It is generally the initial communication between a _carrier_ and a _shipper_. Afterwards, the transport order is served as input in creating actual planning data as part of the [Monitoring Trips](monitoring-trips) profile.
+The very first step of transporting goods from one place to another starts with the _transport order_. It is concerned with what needs to be transported under what constraints (i.e. before a certain date, or below a certain temperature). It is generally the initial communication between a _carrier_ and a _shipper_. Afterwards, the transport order is served as input in creating actual planning data as part of the [Monitoring Trips](monitoring_trips.md) profile.
 
 General structure
 -----------------
