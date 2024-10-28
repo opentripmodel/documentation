@@ -67,9 +67,6 @@ Profobuf is also used in the **[FMS ITS](fms_it.md)**.
 
 Example
 -------
-
-Example JSON
---------
 The shape of messages in this profile is very simple, it contains the single
 event type `LocationUpdateEvent` with the GPS coordinates, and optional speed
 and heading information:

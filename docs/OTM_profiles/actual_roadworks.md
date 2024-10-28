@@ -36,15 +36,15 @@ The OTM Event entity adds lifecycle information to the OTM Route, e.g.:
 - `realized`
 
 
-Typical constraints for roadworks
----------------------------------
+### Typical constraints for roadworks
+
 Actual roadworks described in OTM, typically start with an `andConstraint` having `timeWindowContraint` accompanied with constraints describing the applicable traffic messures.  Typical roadwork constraints are:
 - `vehicleTypeConstraint` which describes the vehicle types that this constraint applies to
 - `valueBoundConstraint` which describes limitations regarding e.g. speed, weight or height
 - `accessConstraint` which describes limitations regarding e.g. speed, weight or height
 
 
-Example JSON
+Example
 -------
 
 Lets imagine we want to report actual road works that are registered on December 20, 2022 at 19:30 CET and deregistered on December 21, 2022 at 5:00 CET.  Two out-of-three lanes are closed and the maximum speed is 50 km/h. 

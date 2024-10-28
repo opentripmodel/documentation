@@ -72,6 +72,3 @@ https://dutchmobilityinnovations.com/spaces/1185/deflog/files?directoryID=9637
 
 Example
 ------
-
-Example JSON
-------
