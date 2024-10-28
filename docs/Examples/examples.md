@@ -1,16 +1,13 @@
 ---
-title: Example Messages
-sidebar_position: 6
+title: Trips
 ---
 
-Example OTM5 messages
+Monitoring Trips
 =====================
-
-This page contains a few examples to help you on your way to create common OTM5 messages.
 
 ## Trips
 
-Note that these examples are based on the [monitoring trip profile](Fundamentals/OTM_Profiles/profiles_examples/monitoring_trips)
+Note that these examples are based on the [monitoring trip profile](Fundamentals/OTM_Profiles/profiles_examples/monitoring_trips).
 
 ### A (planned) trip
 
