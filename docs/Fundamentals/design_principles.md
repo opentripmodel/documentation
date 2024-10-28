@@ -1,33 +1,6 @@
----
-title: Overview
-id: overview
-sidebar_position: 1
+Design Principles 
+============
 
----
-
-Overview of the Fundamentals
-==============================
-
-Introduction
-------------
-
-The fundamental idea behind the _open trip model_ is splitting data into _static
-data_ (entities) and _dynamic data_ (actions and events) and decouple their
-interaction (similar to how a relational database decouples relations). 
-
-Entities contain data that changes relatively sparingly. Think for instance
-about _consignments_, _locations_, and _vehicles_. Though properties of these
-entities might change, this generally occurs quite rarely and is definitely not
-reflected in real-time. 
-
-On the other hand, how these static entities interact is more prone to change.
-For example, a vehicle itself remains the same height, width, and weight over
-its lifetime, but it can move multiple different goods every single day. Actions
-are used to model this interaction between entities, and events allow you to
-model real-time data & update previously shared data incrementally.
-
-Design principles
------------------
 
 1. **Designed for communication, not processing or as an internal format.**
 
@@ -69,5 +42,3 @@ We strongly believe we should strive to avoid custom software as much as
 possible, but that the limited amount of custom software needed to model
 specific use cases or OTM profiles is already a large improvement over the many
 custom, proprietary API formats that were needed before.
-
-
