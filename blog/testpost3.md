@@ -1,10 +1,12 @@
 ---
 title: Test - Welcome to the OpenTripModel! 
-author: Wout van den Heuvel
-tags: [logistieke data, OTM, Open Trip Model]
+authors: Woutvdheuvel
+tags: 
+    - logistiekedata
+    - OTM 
 date: 2024-10-18
 ---
-
+<!-- truncate -->
 Welcome to the OpenTripModel developer hub and documentation website.
 
 Changelog
