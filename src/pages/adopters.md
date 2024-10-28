@@ -1,6 +1,5 @@
 ---
 title: Adopters
-sidebar_position: 8
 ---
 OTM Adopters
 ============

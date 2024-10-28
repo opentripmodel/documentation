@@ -97,6 +97,7 @@ const config: Config = {
         },
         { to: "/blog", label: "Blog", position: "left" },
         { to: "/api", label: "API", position: "left" },
+        { to: "/adopters", label: "Adopters", position: "left"},
         {
           href: "https://sutc.semantic-treehouse.nl/",
           label: "STH",
