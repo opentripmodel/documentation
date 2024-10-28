@@ -17,7 +17,7 @@ everything within the FMS ITS is OTM5.
 Overview
 --------
 
-This is an implementation of the [FMS profile](fms_profile.md)
+This is an implementation of the [FMS profile](fms.md)
 
 With ITS services, truck drivers can get in-truck real-time information about
 dangerous situations, speed limits, lane closures, events, closed bridges,
@@ -61,7 +61,7 @@ both types of connections.
 
 For the FMS-systems, there are various implementation options: 
 1. CSP Backend – Backoffice (FMS backend implementation)
-2. CSP Backend – Direct to vehicle (direct client implementation
+2. CSP Backend – Direct to vehicle (direct client implementation)
 
 It is up to the logistics IT supplier to decide whether the communication takes
 place directly from the client or via a backend. Both options have already been
@@ -69,3 +69,9 @@ tested in practice and each offer their own set of advantages and disadvantages.
 Technical description of the ITS-FMS interface and Protobuf elaboration can be
 found at:
 https://dutchmobilityinnovations.com/spaces/1185/deflog/files?directoryID=9637
+
+Example
+------
+
+Example JSON
+------

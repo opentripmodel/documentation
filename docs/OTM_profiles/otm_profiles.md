@@ -15,7 +15,7 @@ This approach makes OTM flexible while remaining quite simple and small. The dat
 ### Setup
 Each profile uses the same setup:
 
-1. It starts of with the what and the why of the profile in a few sentences. So you can quickly determine whether this profile is of interest to you.
-2. Then it provides the general structure, which entities are involved, and what data in these entities are present.
-3. Since this all fairly abstract, it then continues with an example. This example is first provided in text, and then worked out in detail in actual JSON messages.
-4. If applicable, links on how to validate JSON messages using the validation tool are present.
+1. **Overview** It starts of with the what and the why of the profile in a few sentences. So you can quickly determine whether this profile is of interest to you.
+2. **General Structure** Then it provides the general structure, which entities are involved, and what data in these entities are present.
+3. **Example** Since this all fairly abstract, it then continues with an example. This example is first provided in text, and then worked out in detail in actual JSON messages.
+4. **JSON message*** If applicable, links on how to validate JSON messages using the validation tool are present.
