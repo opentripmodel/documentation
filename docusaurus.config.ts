@@ -36,6 +36,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
+          includeCurrentVersion: false,
         },
         blog: {
           showReadingTime: true,
@@ -88,6 +89,10 @@ const config: Config = {
           to: "/",
           label: "About",
           position: "left",
+        },
+        {
+          type: "docsVersionDropdown",
+          position: "right",
         },
         {
           type: "docSidebar",
