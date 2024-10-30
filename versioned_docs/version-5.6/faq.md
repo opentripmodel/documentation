@@ -6,10 +6,6 @@ sidebar_position: 7
 Frequently Asked Questions
 ==========================
 
-* _Is it mandatory to use JSON as file format for OTM5?_
-  
-  > Yes, this is mandatory. OTM5 does not exist as XML and only JSON is and will be supported. By keeping the options to a minum we
-  ensure it is easier to adopt and also that parties that implement OTM can actually talk with each other.
 
 * _How open or free is OTM5 as a standard? How do you prevent that different parties add or change fields?_
   
@@ -25,40 +21,11 @@ Frequently Asked Questions
   speed values we have provided the options in [the API speficication](https://otm5.opentripmodel.org/) and we are also currently working
   on extending that for the different 'types' that are present (such as vehicles, goods items, transport equipment, etc.)
 
-* _The API specification is based on the REST architecture? Is REST therefore mandatory? Are alternatives such as sFTP permitted?_
-
-  > To prevent many flavours of communicating OTM5 we decided to incorporate the actual protocol of communication within the standard. So yes
-  the use of REST is mandatory. We understand that moving towards OTM5 is a proces and therefore we like to encourage to focus on the model first,
-  but to incorporate the REST architecture afterwards as well.
-
-* _Are any endpoints provided by the OTM standard?_
-
-  > No, the OTM5 standard only consists of the _specification_ of what OTM is and how it should be used. Parties needing to communicate need to
-  setup services themselves to actually do this communication. Which party provides the endpoint and which party uses those endpoints needs to be
-  decided by the parties themselves as well.
 
 * _When using Transport Orders is it mandatory to use one, or multiple consignments?_
 
   > A transport without any consignment doesn't make sense. However there is no rule about whether or not a transport order can contain one or
   multiple consignments. Different parties have different needs, so we cannot mandate a process here.
-
-* _How do you update a transport order with multiple consignments?_
-
-  > There are two supported options within the OTM5 standard for updates.
-  > 1. You can send the complete transportOrder, including all consignments (both those that are changed and those that are unchanged).
-  > 2. You only send an update request to the specific consignments that need updating.
-  > The advantage of method 1 is that you only need to do one request, but the downside is that the messages can get quite large, even if
-   most consignments did not change. The advantage of method 2 is that you only send what is changed, but you do need to do multiple requests
-   to change each consignment. Our view is that parties should always support method 1 and optionally can also support method 2.
-
-* _What is the difference between actions and events?_
-
-  > Actions model the dynamic interaction between static entities. Such as loading and unloading goods from and into vehicles. Entities like
-  vehicles seldomly change, whereas load and unload time windows are often updated. By separateing these in entities and actions we make this
-  interaction simpler. 
-  >
-  > Events on the other hand model updates to existing data (such as the updateEvent, or associationCreatedEvent/associationRemovedEvent) or
-  model changes that are happening in real-time (such as locationUpdateEvents or sensorUpdateEvents). 
 
 * _My company does not use UUIDs for identifying entities, are UUIDs mandatory?_
 
