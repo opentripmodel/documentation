@@ -9,7 +9,7 @@ const config: Config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://opentripmodel.github.io/",
+  url: "https://opentripmodel.github.io/documentation/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/documentation/",
