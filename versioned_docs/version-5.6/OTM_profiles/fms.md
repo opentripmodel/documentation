@@ -22,7 +22,7 @@ also incorporate other sensor data (such as temperature, road situtations,
 traffic jams, etc.) later once we have a more solid grip on how to model it in
 OTM.
 
-One available implementation of this profile is the **[FMS ITS](fms_its_implementation.md)**.
+One available implementation of this profile is the **[FMS ITS](fms-it)**.
 
 General structure
 -----------------
@@ -63,7 +63,7 @@ following definition
 As a next step we will create an official `LocationUpdateEvent` Protobuf schema
 and make it available here.
 
-Profobuf is also used in the **[FMS ITS](fms_it.md)**.
+Profobuf is also used in the **[FMS ITS](fms-it)**.
 
 Example
 -------

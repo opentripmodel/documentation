@@ -7,7 +7,7 @@ Monitoring Trips
 
 ## Trips
 
-Note that these examples are based on the [monitoring trip profile](Fundamentals/OTM_Profiles/profiles_examples/monitoring_trips).
+Note that these examples are based on the [monitoring trip profile](../OTM_profiles/monitoring_trips).
 
 ### A (planned) trip
 
@@ -110,7 +110,7 @@ Then, on the stop, a load action is created, with the consignment to be loaded:
           }
 ```
 
-The complete trip can be found [here](json/trip_with_actions.json)
+The complete trip can be found [here](/data/trip_with_actions.json)
 
 ### A trip with vehicle, trailer and driver information
 
@@ -238,7 +238,7 @@ Lastly, if we need a trailer on the truck we can attach it on a stop (usually th
 
 You might wonder why the trailer is on the stop instead of on the vehicle itself. The reason is that in many logistic operations there might be more than one trailer involved. By using one system the simple case might be a little more involved, but it works without any changes for more complex operations.
 
-The complete trip with vehicle information can be found [here](json/trip_with_vehicle.json)
+The complete trip with vehicle information can be found [here](/data/trip_with_vehicle.json)
 
 ### A trip with realization data
 
@@ -307,7 +307,7 @@ Now the original trip can be enriched with the realized stop data by creating st
     }
 ```
 
-The complete trip with all realization data can be found [here](json/trip_with_realization_data.json)
+The complete trip with all realization data can be found [here](/data/trip_with_realization_data.json)
 
 
 ### A trip with consignor/consignees
@@ -354,4 +354,4 @@ model this situation in OTM5 by using the designated actor roles _consignor_ and
     },
 ```
 
-The complete trip using consignor/consignee can be found [here](json/trip_with_consignor_consignee.json).
+The complete trip using consignor/consignee can be found [here](/data/trip_with_consignor_consignee.json).
