@@ -58,7 +58,7 @@ able to process it anyway.
 The loose format with many optional values allows for handling many use cases
 with one data model. However, it might result in two parties implementing OTM
 without being able to communicate automatically. To avoid this, [OTM profiles
-were created](OTM_Profiles), so that different use cases have a
+were created](../OTM_profiles), so that different use cases have a
 clear intended structure. Even so, it could still result in small discrepancies.
 We are continously trying to balance flexibility to enable parties to use OTM
 broadly, and strict rules so that the parties use OTM consistently.

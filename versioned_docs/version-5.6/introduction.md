@@ -16,7 +16,7 @@ On this portal
 1. **About section** on general knowledge of OTM.
 2. **Documentation** explains all different aspects of OTM on a technical level.
 3. **Blog** where updates are provided regarding OTM.
-4. **[API documentation](/API)** defined using [OpenAPI](https://spec.openapis.org/oas/v3.1.0). It contains all the entities, data structures and operations that OTM5 supports.
+4. **[API documentation](/api)** defined using [OpenAPI](https://spec.openapis.org/oas/v3.1.0). It contains all the entities, data structures and operations that OTM5 supports.
 5. **Semantic treehouse** which can be used to create messages and validation.
 6. **Github repository** for [change requests](https://github.com/opentripmodel/otm5-change-requests), either to the specification or the API documentation page. If you have any questions or suggestions, this is the place to discuss.
 
