@@ -1,7 +1,3 @@
-Here's your document with the requested replacements applied:
-
----
-
 OTM Entities
 ============
 
