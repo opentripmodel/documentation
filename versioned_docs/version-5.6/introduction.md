@@ -19,11 +19,14 @@ On this portal
 4. **[API documentation](/api)** defined using [OpenAPI](https://spec.openapis.org/oas/v3.1.0). It contains all the entities, data structures and operations that OTM5 supports.
 5. **Semantic treehouse** which can be used to create messages and validation.
 6. **Github repository** for [change requests](https://github.com/opentripmodel/otm5-change-requests), either to the specification or the API documentation page. If you have any questions or suggestions, this is the place to discuss.
+7. **SUTC website** contains a link to the SUTC website.
 
 **Side Bar**
 
 1. **Fundamentals**  explains the core ideas and concepts of OTM. It contains an overview that shows which entities exist in the model and how they are related to each other.
-2. **How To** contains a guides on various concepts using examples and more explanation.
-3. **OTM profiles** looks at different use cases and ensures that each of them get clear guidelines on how to be modelled in OTM.
+2. **OTM profiles** looks at different use cases and ensures that each of them get clear guidelines on how to be modelled in OTM.
+3. **Usage Notes** look at how different functionalities within OTM can be used.
+4. **Example Messages** contain various examples as messages.
+2. **Validation** contains a guide on how validate your OTM messages using STH.
+5. **API Specification** contains additional information on the OTM specification.
 4. **FAQ** contains frequently asked questions.
-5. **Validation** contains a guide on how to validate your message using [Semantic Treehouse](https://sutc.semantic-treehouse.nl/).
