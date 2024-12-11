@@ -94,15 +94,16 @@ const config: Config = {
         {
           type: "docsVersionDropdown",
           position: "right",
-        },
-        { to: "/docs/OTM_profiles/", label: "OTM Profiles", position: "left" },
+        }, 
         {
           type: "docSidebar",
           sidebarId: "docSidebar",
           position: "left",
           label: "Documentation",
         },
+        { to: "/docs/OTM_profiles/", label: "OTM Profiles", position: "left" },
         { to: "/api", label: "API", position: "left" },
+        { to: "/docs/developer/", label: "Developer", position: "left" },
         // { to: "/blog", label: "Blog", position: "left" },
         { to: "/adopters", label: "Adopters", position: "left"},
         {
