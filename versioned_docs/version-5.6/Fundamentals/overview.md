@@ -1,6 +1,6 @@
 ---
-title: Overview
-id: overview
+title: Fundamentals
+id: fundamentals
 sidebar_position: 1
 
 ---
