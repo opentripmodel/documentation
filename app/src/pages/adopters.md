@@ -54,6 +54,5 @@ Below is a table of organisations who made a contribution to the OpenTripModel s
 | ![](/img/logos_contributors/logo-TANS.png)| TANS | https://www.tans.net |
 |![](/img/logos_contributors/centric.png) | Centric | https://www.centric.eu/nl/branches/transport-en-logistiek/ |
 | ![](/img/logos_contributors/navitrans.pjg.jpg)| Rainbow Logistics IT | https://navitrans.rainbowsolutions.nl/|
-|  ![](/img/logos_contributors/simacan.png) | Simacan | https://www.simacan.com |
 | ![](/img/logos_contributors/data2track-logo.png) | Data2Track | https://www.data2track.nl/|
 | ![](/img/logos_contributors/bluerock.png)| VOICT (bluerock) | https://voict.nl/ |
