@@ -15,17 +15,17 @@ The different phases of a trip are:
 
 2. Once a planning is finalized it can be driven. The vehicle and planned times are all known. At this point we might know more about the state of the world and can anticipate what will happen during the trip, such as being delayed because of a traffic jam. Continous location update and traffic events can provide real-time insight in where the vehicle is, that can serve as a basis to make predictions.
 
-3. Once all is set and done the trip is fininshed. All information is known and cannot change anymore since it is in the past. This information is useful so we can compare our original planning with what actually happened so we can make more accurate planning data in the future. It can also be used for billing, or analyzing the data to find bottlebecks and optimize the process for next trips.
+3. Once all is set and done the trip is finished. All information is known and cannot change anymore since it is in the past. This information is useful so we can compare our original planning with what actually happened so we can make more accurate planning data in the future. It can also be used for billing, or analyzing the data to find bottlebecks and optimize the process for next trips.
 
 
 General structure
 -----------------
 
-Monitoring trips is a complex operation that includes almost every entity and action within OTM, and was actually the primary reason for creating OTM. Looking at the original image from the [overview](../Fundamentals/overview) we can see that only the TransportOrder is not present. Everything that can be present in phase 1 is black, the additions for phase 2 are made purple, and the only addition for phase 3 is actual _proof of delivery_ using a HandOver made red. 
+Monitoring trips is a complex operation that includes almost every entity and action within OTM, and was actually the primary reason for creating OTM. Looking at the original image from [OTM entities](../Fundamentals/entities) we can see that for the monitoring trips profile, only the TransportOrder is not present. Everything that can be present in phase 1 is black, the additions for phase 2 are made purple, and the only addition for phase 3 is actual _proof of delivery_ using a HandOver made red. 
 
 ![](/img/otm5_monitoring_trips_profile.png)
 
-Since this might not give enough insight, we can also the present the hierarchy with the required rules as follows:
+Since this might not give enough insight, we can also present the hierarchy with the required rules as follows:
 
 - Trip
   - A trip _must_ have a unique UUID.
