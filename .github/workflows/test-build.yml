@@ -19,8 +19,10 @@ jobs:
           cache: yarn
 
       - name: Install dependencies
+        working-directory: ./app
         run: yarn install --frozen-lockfile
       - name: Test build website
+        working-directory: ./app
         run: yarn build
   
   test-docker-build:
@@ -30,7 +32,7 @@ jobs:
       - name: Build image with Docker
         run: |-
           docker build \
-            --tag "$IMAGE:$GITHUB_SHA" \
+            --tag "otm-documentation:$GITHUB_SHA" \
             --build-arg GITHUB_SHA="$GITHUB_SHA" \
             --build-arg GITHUB_REF="$GITHUB_REF" \
             .
