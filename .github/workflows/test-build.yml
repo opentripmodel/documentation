@@ -17,6 +17,7 @@ jobs:
         with:
           node-version: 18
           cache: yarn
+          cache-dependency-path: app/yarn.lock
 
       - name: Install dependencies
         working-directory: ./app
@@ -29,6 +30,10 @@ jobs:
     name: Test Docker build
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Build image with Docker
         run: |-
           docker build \
