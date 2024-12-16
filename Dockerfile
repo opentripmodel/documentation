@@ -2,16 +2,16 @@ FROM node:lts as build
 
 WORKDIR /app
 
-COPY app/package.json app/package-lock.json /app/
+COPY app/package.json app/yarn.lock /app/
 
-RUN npm install
+RUN yarn install --frozen-lockfile
 
 COPY app/ /app/
 
 # This search and replace is needed to set the baseUrl to '/' only
 RUN sed -i 's|/documentation/|/|g' docusaurus.config.ts
 
-RUN npm run build
+RUN yarn build
 
 FROM nginx:stable-alpine
 
