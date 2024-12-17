@@ -1,6 +1,6 @@
 ---
-title: Overview
-id: overview
+title: Fundamentals
+id: fundamentals
 sidebar_position: 1
 
 ---
@@ -36,7 +36,7 @@ different parties use the same language for communicating. To meet that purpose
 OTM needs to be applicable in many use cases which requires great flexibility.
 This flexiblity can complicate the code if you process OTM internally (for
 example when dealing with inline vs reference associations). You are not
-required - or even encouraged - to completely implement the specification if
+required - or even encouraged - to completely implement the specification if it 
 doesn't fit your use cases. Focus on the parts of OTM that you need and
 translate between OTM and your internal format at the boundaries of your
 services.
@@ -48,7 +48,7 @@ traffic and logistics, as such OTM is pretty loose in what data is required.
 Many fields are optional, and often data types offer multiple modelling options,
 such as the many georeference options available on a location. However, for your
 use case some fields might actually be required, even if the OTM specification
-makes them optional. In such cases the recommend approach is to _only_ accept
+makes them optional. In such cases the recommended approach is to _only_ accept
 incoming OTM that you are able to process, and return validation errors
 otherwise. There is no reason to accept OTM, even if valid, when you are not
 able to process it anyway.
@@ -58,7 +58,7 @@ able to process it anyway.
 The loose format with many optional values allows for handling many use cases
 with one data model. However, it might result in two parties implementing OTM
 without being able to communicate automatically. To avoid this, [OTM profiles
-were created](OTM_Profiles), so that different use cases have a
+were created](../OTM_profiles), so that different use cases have a
 clear intended structure. Even so, it could still result in small discrepancies.
 We are continously trying to balance flexibility to enable parties to use OTM
 broadly, and strict rules so that the parties use OTM consistently.

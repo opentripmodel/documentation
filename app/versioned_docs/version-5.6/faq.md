@@ -64,5 +64,4 @@ Frequently Asked Questions
   being loaded and unloaded. Thus an action needs to be able to refer to the consignment. However, when we look at those same consignments from
   a _track and trace_ perspective we often follow a _single_ consignment that can be part of multiple trips before arriving at its final destination. Thus
   a consignment contains _all_ load and unload actions in that use case. It can be a bit daunting at first, but we strongly believe that this allows us to
-  keep the specification fairly small while being useful for a wide range of use cases. See also the [overview](./Fundamentals/overview) for more information.
-
+  keep the specification fairly small while being useful for a wide range of use cases. See also the [overview](./Fundamentals/fundamentals) for more information.
