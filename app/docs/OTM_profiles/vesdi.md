@@ -1,4 +1,4 @@
-CBS profile
+CBS Profile
 =====
 
 :::warning
@@ -13,7 +13,7 @@ VESDI is the abbreviation for _Vehicle_, _Emission_, _Shipment_, _Data_, _Interf
 General structure
 -----------------
 
-The basis for the VESDI interface is the OTM realized trip. See also [The official trip API documentation](https://otm5.opentripmodel.org/#tag/Trip/paths/~1api~1v5~1trips/put) and the [realized trip profile in monitoring](monitoring_trips.md#phase-3-realization) Added are specific element related to the vehicle (e.g. type, emission class) and fuel consumption (e.g usage, mileage). Note though that the emission and the measured distance are not part of OTM5.0 yet, but are planned for OTM5.1.              
+The basis for the VESDI interface is the OTM realized trip. See also [The official trip API documentation](https://otm5.opentripmodel.org/#tag/Trip/paths/~1api~1v5~1trips/put) and the realized trip profile in monitoring Added are specific element related to the vehicle (e.g. type, emission class) and fuel consumption (e.g usage, mileage). Note though that the emission and the measured distance are not part of OTM5.0 yet, but are planned for OTM5.1.              
 
 The VESDI can be used in B2B communication as well.
 

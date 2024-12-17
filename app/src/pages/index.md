@@ -6,7 +6,7 @@ title: About
 
 What is the Open Trip Model?
 ------------
-The Open Trip Model (OTM) is an open-source, lightweight data specification designed to simplify communication across logistics and traffic networks. Created by Simacan, OTM facilitates the real-time exchange of logistic trip data on the web, enabling seamless collaboration among shippers, carriers, software vendors, OEMs, and truck manufacturers. The model addresses the inefficiencies caused by diverse data formats in the logistics sector, which often create complex and costly custom translation layers between companies. By standardizing data exchange, OTM makes the technological landscape simpler and more cost-effective, encouraging innovation and collaboration within the industry.
+The Open Trip Model (OTM) is an open-source, lightweight data specification designed to simplify communication across logistics and traffic networks. Originally created by Simacan but now open-source, OTM facilitates the real-time exchange of logistic trip data on the web, enabling seamless collaboration among shippers, carriers, software vendors, OEMs, and truck manufacturers. The model addresses the inefficiencies caused by diverse data formats in the logistics sector, which often create complex and costly custom translation layers between companies. By standardizing data exchange, OTM makes the technological landscape simpler and more cost-effective, encouraging innovation and collaboration within the industry.
 
 <iframe 
 width="560" 

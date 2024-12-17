@@ -1,6 +1,6 @@
 ---
-title: Overview
-id: overview
+title: Fundamentals
+id: fundamentals
 sidebar_position: 1
 
 ---
@@ -36,7 +36,7 @@ different parties use the same language for communicating. To meet that purpose
 OTM needs to be applicable in many use cases which requires great flexibility.
 This flexiblity can complicate the code if you process OTM internally (for
 example when dealing with inline vs reference associations). You are not
-required - or even encouraged - to completely implement the specification if
+required - or even encouraged - to completely implement the specification if it 
 doesn't fit your use cases. Focus on the parts of OTM that you need and
 translate between OTM and your internal format at the boundaries of your
 services.
@@ -48,7 +48,7 @@ traffic and logistics, as such OTM is pretty loose in what data is required.
 Many fields are optional, and often data types offer multiple modelling options,
 such as the many georeference options available on a location. However, for your
 use case some fields might actually be required, even if the OTM specification
-makes them optional. In such cases the recommend approach is to _only_ accept
+makes them optional. In such cases the recommended approach is to _only_ accept
 incoming OTM that you are able to process, and return validation errors
 otherwise. There is no reason to accept OTM, even if valid, when you are not
 able to process it anyway.

@@ -17,7 +17,7 @@ Frequently Asked Questions
 * _OTM5 contains some free text fields, such as the vehicle type, the unit measurement, and the type of transport equipment? Which values
   should be used for those fields?_
 
-  > We have been working on incorporating 'standard lists' in the specification as well. For currentcies, temperatures, mass, length and
+  > We have been working on incorporating 'standard lists' in the specification as well. For currencies, temperatures, mass, length and
   speed values we have provided the options in [the API specification](/api) and we are also currently working
   on extending that for the different 'types' that are present (such as vehicles, goods items, transport equipment, etc.)
 
@@ -29,7 +29,7 @@ Frequently Asked Questions
 
 * _My company does not use UUIDs for identifying entities, are UUIDs mandatory?_
 
-  > Since OTM5.2 you do not have to provide UUIDs anymore when sending entities. However, UUIDs are currently best possible method of
+  > Since OTM5.2 you do not have to provide UUIDs anymore when sending entities. However, UUIDs are currently the best possible method of
   ensuring unique IDs among different platforms. So we highly recommend using them as your primary identifiers. Omitting UUIDs is thus
   allowed when sending entities, however you cannot retrieve entities by any other identifier. This might be accepted if retrieving is
   not necessary.
@@ -64,5 +64,4 @@ Frequently Asked Questions
   being loaded and unloaded. Thus an action needs to be able to refer to the consignment. However, when we look at those same consignments from
   a _track and trace_ perspective we often follow a _single_ consignment that can be part of multiple trips before arriving at its final destination. Thus
   a consignment contains _all_ load and unload actions in that use case. It can be a bit daunting at first, but we strongly believe that this allows us to
-  keep the specification fairly small while being useful for a wide range of use cases. See also the [overview](./Fundamentals/overview) for more information.
-
+  keep the specification fairly small while being useful for a wide range of use cases. See also the [overview](./Fundamentals/fundamentals) for more information.
