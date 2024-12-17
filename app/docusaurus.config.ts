@@ -37,7 +37,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          includeCurrentVersion: false,
+          includeCurrentVersion: true,
         },
         blog: {
           showReadingTime: true,
@@ -75,7 +75,6 @@ const config: Config = {
     //   },
     // ] satisfies Redocusaurus.PresetEntry,
   ],
-  
 
   themeConfig: {
     // Replace with your project's social card
@@ -94,7 +93,7 @@ const config: Config = {
         {
           type: "docsVersionDropdown",
           position: "right",
-        }, 
+        },
         {
           type: "docSidebar",
           sidebarId: "docSidebar",
@@ -105,7 +104,7 @@ const config: Config = {
         { to: "/api", label: "API", position: "left" },
         { to: "/docs/developer/", label: "Developer", position: "left" },
         // { to: "/blog", label: "Blog", position: "left" },
-        { to: "/adopters", label: "Adopters", position: "left"},
+        { to: "/adopters", label: "Adopters", position: "left" },
         {
           href: "https://sutc.semantic-treehouse.nl/",
           label: "STH",
