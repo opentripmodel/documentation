@@ -1,6 +1,7 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
+import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
 // import type * as Redocusaurus from 'redocusaurus';
 
 const config: Config = {
@@ -31,6 +32,8 @@ const config: Config = {
     locales: ["en"],
   },
 
+  themes: ["docusaurus-theme-openapi-docs"],
+
   presets: [
     [
       "classic",
@@ -38,6 +41,7 @@ const config: Config = {
         docs: {
           sidebarPath: "./sidebars.ts",
           includeCurrentVersion: true,
+          docItemComponent: "@theme/ApiItem",
         },
         blog: {
           showReadingTime: true,
@@ -74,6 +78,55 @@ const config: Config = {
     //     },
     //   },
     // ] satisfies Redocusaurus.PresetEntry,
+  ],
+
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "api",
+        path: "api",
+        routeBasePath: "api",
+        // sidebarPath: './sidebarsCommunity.js',
+        // ... other options
+      },
+    ],
+    [
+      "docusaurus-plugin-openapi-docs",
+      {
+        id: "api",
+        docsPluginId: "classic",
+        config: {
+          otm: {
+            specPath: "api/test.yaml",
+            hideSendButton: true,
+            showExtensions: false,
+            outputDir: "docsApi",
+            sidebarOptions: {
+              groupPathsBy: "tagGroup",
+            },
+          } satisfies OpenApiPlugin.Options,
+          // httpDataPlane: {
+          //   specPath: "docs/apps/http-data-plane/openapi.yaml",
+          //   hideSendButton: true,
+          //   showExtensions: false,
+          //   outputDir: "docs/apis/http-data-plane",
+          //   sidebarOptions: {
+          //     groupPathsBy: "tag"
+          //   }
+          // } satisfies OpenApiPlugin.Options,
+          // wallet: {
+          //   specPath: "docs/apps/wallet/openapi.yaml",
+          //   hideSendButton: true,
+          //   showExtensions: false,
+          //   outputDir: "docs/apis/wallet",
+          //   sidebarOptions: {
+          //     groupPathsBy: "tag"
+          //   }
+          // } satisfies OpenApiPlugin.Options
+        },
+      },
+    ],
   ],
 
   themeConfig: {

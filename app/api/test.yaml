@@ -1,0 +1,412 @@
+openapi: 3.0.2
+info:
+  title: Semantic Treehouse API
+  description: TODO
+  license:
+    name: MIT
+  version: 0.9.0
+externalDocs:
+  description: More about Semantic Treehouse
+  url: https://www.semantic-treehouse.nl
+servers:
+  - url: https://{community}.semantic-treehouse.nl/api/v1
+    variables:
+      community:
+        default: sutc
+        enum:
+          - sutc
+          - setu
+          - ketenstandaard
+          - smartconnected
+          - tno
+tags:
+  - name: evalidator
+    description: >-
+      APIs to consume the validator functionality via the Semantic Treehouse
+      platform
+paths:
+  /evalidator/info:
+    get:
+      tags:
+        - evalidator
+      summary: Get information about which specifications can be used to validate
+      parameters:
+        - in: header
+          name: Access-Token
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: List of all codelist entries
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidatorInfo'
+  /evalidator/schematron-object/{objectId}/content:
+    get:
+      tags:
+        - evalidator
+      summary: Get content of schematron specification
+      parameters:
+        - in: path
+          name: objectId
+          description: Identifier of the schematron specification object
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Access-Token
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The schematron specification in 'text/xml' format
+  /evalidator/syntax/{syntaxBindingId}/schematron/rules:
+    get:
+      tags:
+        - evalidator
+      summary: >-
+        Get schematron specification of business rules that are maintained in
+        Semantic Treehouse
+      parameters:
+        - in: path
+          name: syntaxBindingId
+          description: Identifier of the syntax binding
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Access-Token
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The schematron specification in 'text/xml' format
+  /evalidator/syntax/{syntaxBindingId}/schematron/codelists:
+    get:
+      tags:
+        - evalidator
+      summary: >-
+        Get schematron specification for codelists constraints that are
+        maintained in Semantic Treehouse
+      parameters:
+        - in: path
+          name: syntaxBindingId
+          description: Identifier of the syntax binding
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Access-Token
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The schematron specification in 'text/xml' format
+  /evalidator/syntax/{syntaxBindingId}/example/{exampleId}:
+    get:
+      tags:
+        - evalidator
+      summary: Get example message for given syntax binding
+      parameters:
+        - in: path
+          name: syntaxBindingId
+          description: Identifier of the syntax binding
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: exampleId
+          description: Identifier of the example
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Access-Token
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: >-
+            The schematron specification in 'application/xml;charset=utf-8'
+            format
+  /evalidator/syntax/{syntaxBindingId}/validate:
+    post:
+      tags:
+        - evalidator
+      summary: Validate a message according to message specifications
+      parameters:
+        - in: path
+          name: syntaxBindingId
+          description: Identifier of the syntax binding
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: skipSchematronIds
+          description: >-
+            Comma separated list of schematron specification identifiers that
+            should not be included in the validation
+          required: false
+          schema:
+            type: string
+          example: 123,456,789
+        - in: header
+          name: Access-Token
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/xml:
+            schema:
+              type: object
+            examples:
+              request1:
+                summary: An XML message to be validated
+                value: <xml></xml>
+      responses:
+        '200':
+          description: Validation report
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationReport'
+components:
+  schemas:
+    Codelist:
+      type: object
+      properties:
+        name:
+          type: string
+        project:
+          $ref: '#/components/schemas/Project'
+        lastUpdated:
+          type: string
+          format: yyyy-mm-dd
+          example: '2020-05-19'
+        isExternal:
+          type: boolean
+        isSubset:
+          type: boolean
+        isUnionOf:
+          type: array
+          items:
+            type: string
+        notes:
+          type: array
+          items:
+            type: string
+      required:
+        - name
+    Entry:
+      type: object
+    Project:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        seqNr:
+          type: integer
+        specifications:
+          type: array
+          items:
+            $ref: '#/components/schemas/Specification'
+    ValidatorInfo:
+      type: object
+      properties:
+        maxUploadSize:
+          type: string
+          example: 256M
+        projects:
+          type: array
+          items:
+            $ref: '#/components/schemas/Project'
+    Specification:
+      type: object
+      properties:
+        id:
+          type: string
+        label:
+          type: string
+        seqNr:
+          type: integer
+        versions:
+          type: array
+          items:
+            $ref: '#/components/schemas/SpecVersion'
+        project:
+          type: string
+    SpecVersion:
+      type: object
+      properties:
+        id:
+          type: string
+        versionId:
+          type: string
+          nullable: true
+        versionStatus:
+          type: string
+          nullable: true
+        syntaxBindings:
+          type: array
+          items:
+            $ref: '#/components/schemas/SyntaxBinding'
+    ResourceRef:
+      type: object
+      properties:
+        _id_:
+          type: string
+        _label_:
+          type: string
+    SyntaxBinding:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+          example: XML
+        enabled:
+          type: boolean
+        examples:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+              name:
+                type: string
+        schema:
+          type: string
+        schematron:
+          type: array
+          items:
+            $ref: '#/components/schemas/SchematronSpec'
+        validateBRs:
+          type: boolean
+        validateCodelists:
+          type: boolean
+        validateSchema:
+          type: boolean
+    SchematronSpec:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        selectedByDefault:
+          type: boolean
+        fileRef:
+          type: string
+    ValidationReport:
+      type: object
+      properties:
+        xml_valid:
+          type: boolean
+        schema_valid:
+          type: boolean
+        br_valid:
+          type: boolean
+        xml_errors:
+          type: object
+          properties:
+            error:
+              type: array
+              items:
+                $ref: '#/components/schemas/XMLError'
+            warning:
+              type: array
+              items:
+                $ref: '#/components/schemas/XMLError'
+        br_result:
+          type: object
+          properties:
+            error:
+              type: array
+              items:
+                $ref: '#/components/schemas/BRViolations'
+            warning:
+              type: array
+              items:
+                $ref: '#/components/schemas/BRViolations'
+            notice:
+              type: array
+              items:
+                $ref: '#/components/schemas/BRViolations'
+            info:
+              type: array
+              items:
+                $ref: '#/components/schemas/BRViolations'
+            debug:
+              type: array
+              items:
+                $ref: '#/components/schemas/BRViolations'
+        svrl_reports:
+          type: array
+          items:
+            type: string
+            example: >-
+              <?xml
+              version="1.0"?><svrl:schematron-output></svrl:schematron-output>
+    XMLError:
+      type: object
+      properties:
+        code:
+          type: integer
+        column:
+          type: integer
+          example: 2
+        level:
+          type: integer
+        line:
+          type: integer
+          example: 17
+        lineTxt:
+          type: string
+        message:
+          type: string
+          example: >-
+            ParseError at [row,col]:[17,2]
+
+            Message: The end-tag for element type "PriceCatalogueNumber" must
+            end with a '>' delimiter.
+    BRViolations:
+      type: object
+      properties:
+        context:
+          type: string
+        count:
+          type: integer
+        ruleId:
+          type: string
+        violations:
+          type: array
+          items:
+            type: object
+            properties:
+              flag:
+                type: string
+              fpi:
+                type: string
+              lineNr:
+                type: integer
+              location:
+                type: string
+              message:
+                type: string
+              see:
+                type: string
+              test:
+                type: string
+              xml:
+                type: string
