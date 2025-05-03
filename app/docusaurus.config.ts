@@ -40,7 +40,6 @@ const config: Config = {
         docs: {
           sidebarPath: "./sidebars.ts",
           includeCurrentVersion: true,
-          docItemComponent: "@theme/ApiItem",
         },
         blog: {
           showReadingTime: true,
@@ -61,16 +60,21 @@ const config: Config = {
   ],
 
   plugins: [
+    // We introduce a second Docusaurus docs content to publish the generated API docs
     [
       "@docusaurus/plugin-content-docs",
       {
         id: "api",
-        path: "api",
+        path: "api-docs",
         routeBasePath: "api",
+        docItemComponent: "@theme/ApiItem",
         // sidebarPath: './sidebarsCommunity.js',
         // ... other options
       },
     ],
+    // The plugin below generates the API docs
+    // Run `yarn docusaurus gen-api-docs all` to generate to the specified output dir 'api-docs'
+    // The docs plugin above will serve those generated docs
     [
       "docusaurus-plugin-openapi-docs",
       {
@@ -81,7 +85,7 @@ const config: Config = {
             specPath: "api/test.yaml",
             hideSendButton: true,
             showExtensions: false,
-            outputDir: "docsApi",
+            outputDir: "api-docs",
             sidebarOptions: {
               groupPathsBy: "tagGroup",
             },
