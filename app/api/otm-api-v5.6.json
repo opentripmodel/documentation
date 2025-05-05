@@ -260,7 +260,7 @@
         "tags": ["Actor"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       },
@@ -306,7 +306,7 @@
         "tags": ["Actor"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -652,7 +652,7 @@
         "tags": ["Actor"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -793,7 +793,7 @@
         "tags": ["Constraint"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       },
@@ -839,7 +839,7 @@
         "tags": ["Constraint"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -1057,7 +1057,7 @@
         "tags": ["Constraint"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -1382,7 +1382,7 @@
         "tags": ["Location"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       },
@@ -1428,7 +1428,7 @@
         "tags": ["Location"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -2014,7 +2014,7 @@
         "tags": ["Location"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -2215,7 +2215,7 @@
         "tags": ["Route"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       },
@@ -2261,7 +2261,7 @@
         "tags": ["Route"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -2599,7 +2599,7 @@
         "tags": ["Route"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -2788,7 +2788,7 @@
         "tags": ["Sensor"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       },
@@ -2834,7 +2834,7 @@
         "tags": ["Sensor"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -3148,7 +3148,7 @@
         "tags": ["Sensor"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -3415,7 +3415,7 @@
         "tags": ["Consignment"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       },
@@ -3461,7 +3461,7 @@
         "tags": ["Consignment"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -3931,7 +3931,7 @@
         "tags": ["Consignment"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -4003,7 +4003,7 @@
         "tags": ["Goods"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       },
@@ -4049,7 +4049,7 @@
         "tags": ["Goods"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -4129,7 +4129,7 @@
         "tags": ["Goods"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -4319,7 +4319,7 @@
         "tags": ["TransportOrder"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       },
@@ -4365,7 +4365,7 @@
         "tags": ["TransportOrder"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -4681,7 +4681,7 @@
         "tags": ["TransportOrder"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -5027,7 +5027,7 @@
         "tags": ["Trip"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       },
@@ -5073,7 +5073,7 @@
         "tags": ["Trip"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -5701,7 +5701,7 @@
         "tags": ["Trip"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -6020,7 +6020,7 @@
         "tags": ["Vehicle"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       },
@@ -6066,7 +6066,7 @@
         "tags": ["Vehicle"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -6640,7 +6640,7 @@
         "tags": ["Vehicle"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -6825,7 +6825,7 @@
         "tags": ["Document"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       },
@@ -6871,7 +6871,7 @@
         "tags": ["Document"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -7177,7 +7177,7 @@
         "tags": ["Document"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -7235,7 +7235,7 @@
         "tags": ["Action"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       },
@@ -7281,7 +7281,7 @@
         "tags": ["Action"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -7333,7 +7333,7 @@
         "tags": ["Action"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -7391,7 +7391,7 @@
         "tags": ["Event"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       },
@@ -7437,7 +7437,7 @@
         "tags": ["Event"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -7489,7 +7489,7 @@
         "tags": ["Event"],
         "security": [
           {
-            "Bearer token": []
+            "BearerToken": []
           }
         ]
       }
@@ -27634,7 +27634,7 @@
       }
     },
     "securitySchemes": {
-      "Bearer token": {
+      "BearerToken": {
         "type": "http",
         "description": "The scope of OTM currently does not include authentication requirements. Though the recommended approach is\nto use Bearer authentication (also known as token authentication).",
         "scheme": "bearer"
