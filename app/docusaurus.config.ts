@@ -82,7 +82,7 @@ const config: Config = {
         docsPluginId: "classic",
         config: {
           otm: {
-            specPath: "api/test.yaml",
+            specPath: "api/otm-api-v5.6.yaml",
             hideSendButton: true,
             showExtensions: false,
             outputDir: "api-docs",
@@ -90,24 +90,6 @@ const config: Config = {
               groupPathsBy: "tagGroup",
             },
           } satisfies OpenApiPlugin.Options,
-          // httpDataPlane: {
-          //   specPath: "docs/apps/http-data-plane/openapi.yaml",
-          //   hideSendButton: true,
-          //   showExtensions: false,
-          //   outputDir: "docs/apis/http-data-plane",
-          //   sidebarOptions: {
-          //     groupPathsBy: "tag"
-          //   }
-          // } satisfies OpenApiPlugin.Options,
-          // wallet: {
-          //   specPath: "docs/apps/wallet/openapi.yaml",
-          //   hideSendButton: true,
-          //   showExtensions: false,
-          //   outputDir: "docs/apis/wallet",
-          //   sidebarOptions: {
-          //     groupPathsBy: "tag"
-          //   }
-          // } satisfies OpenApiPlugin.Options
         },
       },
     ],
