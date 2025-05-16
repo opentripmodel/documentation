@@ -465,7 +465,7 @@ paths:
       tags:
         - Actor
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/actors/{UUID}:
     get:
       responses:
@@ -641,7 +641,7 @@ paths:
       tags:
         - Actor
       security:
-        - Bearer token: []
+        - BearerToken: []
     delete:
       responses:
         "204":
@@ -692,7 +692,7 @@ paths:
       tags:
         - Actor
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/constraints:
     put:
       responses:
@@ -895,7 +895,7 @@ paths:
       tags:
         - Constraint
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/constraints/{UUID}:
     get:
       responses:
@@ -1028,7 +1028,7 @@ paths:
       tags:
         - Constraint
       security:
-        - Bearer token: []
+        - BearerToken: []
     delete:
       responses:
         "204":
@@ -1079,7 +1079,7 @@ paths:
       tags:
         - Constraint
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/locations:
     put:
       responses:
@@ -1547,7 +1547,7 @@ paths:
       tags:
         - Location
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/locations/{UUID}:
     get:
       responses:
@@ -1813,7 +1813,7 @@ paths:
       tags:
         - Location
       security:
-        - Bearer token: []
+        - BearerToken: []
     delete:
       responses:
         "204":
@@ -1864,7 +1864,7 @@ paths:
       tags:
         - Location
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/routes:
     put:
       responses:
@@ -2177,7 +2177,7 @@ paths:
       tags:
         - Route
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/routes/{UUID}:
     get:
       responses:
@@ -2365,7 +2365,7 @@ paths:
       tags:
         - Route
       security:
-        - Bearer token: []
+        - BearerToken: []
     delete:
       responses:
         "204":
@@ -2416,7 +2416,7 @@ paths:
       tags:
         - Route
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/sensors:
     put:
       responses:
@@ -2707,7 +2707,7 @@ paths:
       tags:
         - Sensor
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/sensors/{UUID}:
     get:
       responses:
@@ -2884,7 +2884,7 @@ paths:
       tags:
         - Sensor
       security:
-        - Bearer token: []
+        - BearerToken: []
     delete:
       responses:
         "204":
@@ -2935,7 +2935,7 @@ paths:
       tags:
         - Sensor
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/consignments:
     put:
       responses:
@@ -3484,7 +3484,7 @@ paths:
       tags:
         - Consignment
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/consignments/{UUID}:
     get:
       responses:
@@ -3791,7 +3791,7 @@ paths:
       tags:
         - Consignment
       security:
-        - Bearer token: []
+        - BearerToken: []
     delete:
       responses:
         "204":
@@ -3842,7 +3842,7 @@ paths:
       tags:
         - Consignment
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/goods:
     put:
       responses:
@@ -3909,7 +3909,7 @@ paths:
       tags:
         - Goods
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/goods/{UUID}:
     get:
       responses:
@@ -3974,7 +3974,7 @@ paths:
       tags:
         - Goods
       security:
-        - Bearer token: []
+        - BearerToken: []
     delete:
       responses:
         "204":
@@ -4025,7 +4025,7 @@ paths:
       tags:
         - Goods
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/transportOrders:
     put:
       responses:
@@ -4312,7 +4312,7 @@ paths:
       tags:
         - TransportOrder
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/transportOrders/{UUID}:
     get:
       responses:
@@ -4487,7 +4487,7 @@ paths:
       tags:
         - TransportOrder
       security:
-        - Bearer token: []
+        - BearerToken: []
     delete:
       responses:
         "204":
@@ -4538,7 +4538,7 @@ paths:
       tags:
         - TransportOrder
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/trips:
     put:
       responses:
@@ -4987,7 +4987,7 @@ paths:
       tags:
         - Trip
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/trips/{UUID}:
     get:
       responses:
@@ -5243,7 +5243,7 @@ paths:
       tags:
         - Trip
       security:
-        - Bearer token: []
+        - BearerToken: []
     delete:
       responses:
         "204":
@@ -5294,7 +5294,7 @@ paths:
       tags:
         - Trip
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/vehicles:
     put:
       responses:
@@ -6042,7 +6042,7 @@ paths:
       tags:
         - Vehicle
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/vehicles/{UUID}:
     get:
       responses:
@@ -6448,7 +6448,7 @@ paths:
       tags:
         - Vehicle
       security:
-        - Bearer token: []
+        - BearerToken: []
     delete:
       responses:
         "204":
@@ -6499,7 +6499,7 @@ paths:
       tags:
         - Vehicle
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/documents:
     put:
       responses:
@@ -6806,7 +6806,7 @@ paths:
       tags:
         - Document
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/documents/{UUID}:
     get:
       responses:
@@ -6991,7 +6991,7 @@ paths:
       tags:
         - Document
       security:
-        - Bearer token: []
+        - BearerToken: []
     delete:
       responses:
         "204":
@@ -7042,7 +7042,7 @@ paths:
       tags:
         - Document
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/actions:
     put:
       responses:
@@ -7095,7 +7095,7 @@ paths:
       tags:
         - Action
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/actions/{UUID}:
     get:
       responses:
@@ -7153,7 +7153,7 @@ paths:
       tags:
         - Action
       security:
-        - Bearer token: []
+        - BearerToken: []
     delete:
       responses:
         "204":
@@ -7204,7 +7204,7 @@ paths:
       tags:
         - Action
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/events:
     put:
       responses:
@@ -7257,7 +7257,7 @@ paths:
       tags:
         - Event
       security:
-        - Bearer token: []
+        - BearerToken: []
   /api/v5/events/{UUID}:
     get:
       responses:
@@ -7315,7 +7315,7 @@ paths:
       tags:
         - Event
       security:
-        - Bearer token: []
+        - BearerToken: []
     delete:
       responses:
         "204":
@@ -7366,7 +7366,7 @@ paths:
       tags:
         - Event
       security:
-        - Bearer token: []
+        - BearerToken: []
 tags:
   - name: Vehicle
     description: >-
@@ -24202,7 +24202,7 @@ components:
         - eventType
         - value
   securitySchemes:
-    Bearer token:
+    BearerToken:
       type: http
       description: >-
         The scope of OTM currently does not include authentication requirements.
