@@ -6,8 +6,8 @@ OTM Adopters
 
 This page contains a non-exhaustive list of companies that have adopted OTM. It can be a great way to quickly see which companies are rapidly innovating and are in favor of open standards. Missing your name? You can provide it to info@sutc.nl together with a logo.
 
-| Logo                              | Company | Type of company | Applications |Use cases |Website |
-|-----------------------------------| --------| ----------------| -----------------|---------|--------|
+| Logo                              | Company | Type of company | Applications     | Use cases | Website |
+|-----------------------------------| --------| ----------------| -----------------|-----------|---------|
 | ![](/img/logos/app2track-logo.png)  | App2track  |  IT    |App Transport & Home Delivery | Track & Trace  | https://www.app2track.com |
 | ![](/img/logos/adapt-logo.jpg)  | Adabt   |  IT    |Interfacing | transport orders, CBS enquete  | https://www.adabt.com/nl/ |
 | ![](/img/logos/Bricklog.jpg) | Bricklog | IT | dashboarding | CBS interface  | https://bricklog.nl/ |
@@ -20,6 +20,7 @@ This page contains a non-exhaustive list of companies that have adopted OTM. It 
 | ![](/img/logos/RGB.JPG) | RGBPlus | IT | Transport Management System |TMS - control tower interface | https://www.rgbplus.nl/ |
 | ![](/img/logos/derooy.png) | de Rooy Transport Logistiek | Logistic Service Provider |TMS | CBS enquete |https://derooytransport.nl/ |
 | ![](/img/logos/simacan-logo.jpg)| Simacan | IT |supply chain visibility & control platform | ETAs, trip planning updates and realisation data |https://www.simacan.com |
+| ![](/img/logos/squid.png) | Squid | IT | Squid Truckplanning, Squid Geocoder, Squid OSRM Truckrouting | TMS interfacing | https://squid.software/ |
 | ![](/img/logos/tans_logo_transparant.png) | TANS | IT | Transport Management System |TMS - TMS interface | https://www.tans.net |
 | ![](/img/logos/transportial-logo.jpg) | Transportial | IT | Transport Management System |TMS based on OTM | https://www.transportial.com |
 | ![](/img/logos/VOICT.jpg) | VOICT IT | IT | Transport Management System |TMS - control tower | https://voict.nl/|
