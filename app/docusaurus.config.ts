@@ -119,9 +119,9 @@ const config: Config = {
           position: "left",
           label: "Documentation",
         },
-        { to: "/docs/OTM_profiles/", label: "OTM Profiles", position: "left" },
+        { to: "/docs/profiles/", label: "OTM Profiles", position: "left" },
         { to: "/api", label: "API", position: "left" },
-        { to: "/docs/developer/", label: "Developer", position: "left" },
+        { to: "/docs/developers/", label: "Developers", position: "left" },
         // { to: "/blog", label: "Blog", position: "left" },
         { to: "/adopters", label: "Adopters", position: "left" },
         {
