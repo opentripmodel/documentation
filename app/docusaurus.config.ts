@@ -59,41 +59,41 @@ const config: Config = {
     ],
   ],
 
-  plugins: [
-    // We introduce a second Docusaurus docs content to publish the generated API docs
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "api",
-        path: "api-docs",
-        routeBasePath: "api",
-        docItemComponent: "@theme/ApiItem",
-        // sidebarPath: './sidebarsCommunity.js',
-        // ... other options
-      },
-    ],
-    // The plugin below generates the API docs
-    // Run `yarn docusaurus gen-api-docs all` to generate to the specified output dir 'api-docs'
-    // The docs plugin above will serve those generated docs
-    [
-      "docusaurus-plugin-openapi-docs",
-      {
-        id: "api",
-        docsPluginId: "classic",
-        config: {
-          otm: {
-            specPath: "api/otm-api-v5.6.yaml",
-            hideSendButton: true,
-            showExtensions: false,
-            outputDir: "api-docs",
-            sidebarOptions: {
-              groupPathsBy: "tagGroup",
-            },
-          } satisfies OpenApiPlugin.Options,
-        },
-      },
-    ],
-  ],
+  // plugins: [
+  //   // We introduce a second Docusaurus docs content to publish the generated API docs
+  //   [
+  //     "@docusaurus/plugin-content-docs",
+  //     {
+  //       id: "api",
+  //       path: "api-docs",
+  //       routeBasePath: "api",
+  //       docItemComponent: "@theme/ApiItem",
+  //       // sidebarPath: './sidebarsCommunity.js',
+  //       // ... other options
+  //     },
+  //   ],
+  //   // The plugin below generates the API docs
+  //   // Run `yarn docusaurus gen-api-docs all` to generate to the specified output dir 'api-docs'
+  //   // The docs plugin above will serve those generated docs
+  //   [
+  //     "docusaurus-plugin-openapi-docs",
+  //     {
+  //       id: "api",
+  //       docsPluginId: "classic",
+  //       config: {
+  //         otm: {
+  //           specPath: "api/otm-api-v5.6.yaml",
+  //           hideSendButton: true,
+  //           showExtensions: false,
+  //           outputDir: "api-docs",
+  //           sidebarOptions: {
+  //             groupPathsBy: "tagGroup",
+  //           },
+  //         } satisfies OpenApiPlugin.Options,
+  //       },
+  //     },
+  //   ],
+  // ],
 
   themeConfig: {
     // Replace with your project's social card
