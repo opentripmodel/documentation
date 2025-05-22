@@ -1,39 +1,45 @@
-Exchanging Transport Orders
-===========================
+---
+sidebar_label: Transport order
+---
 
-:::warning
-This profile is still a work in progress.
+# OTM Profile - Transport order
+
+:::info
+The message models of OTM profiles are specified and maintained here: https://sutc.semantic-treehouse.nl/specifications
+
+Direct link to the [OTM Profile - Transport order v1](https://sutc.semantic-treehouse.nl/message-model/MessageModel_30ae15cb-f8d0-404a-8cd6-6cc57f0278fe)
 :::
 
-Overview
---------
+## Overview
 
-The very first step of transporting goods from one place to another starts with the _transport order_. It is concerned with what needs to be transported under what constraints (i.e. before a certain date, or below a certain temperature). It is generally the initial communication between a _carrier_ and a _shipper_. Afterwards, the transport order is served as input in creating actual planning data as part of the [Monitoring Trips](monitoring_trips.md) profile.
+The very first step of transporting goods from one place to another starts with the **transport order**. It is concerned with what needs to be transported under what conditions (i.e. before a certain date, or below a certain temperature). It is generally the initial communication between a **shipper** and a **carrier**. Afterwards, the transport order is served as input in creating actual planning data.
 
-General structure
------------------
+## Profile structure
 
-At the bottom of the hierarchy we have goods, physical units with dimensions, weights, etc. that need to be transported. Goods are part of a consignment, which is an administrative unit that groups the goods together. Note that groups within one consignment cannot be split, they are always part of the same transported unit. If goods need or can be split they should be part of different consignments.
+At the bottom of the hierarchy we have `goods`, physical units with dimensions, weights, etc. that need to be transported. Goods are part of a `consignment`, which is an administrative unit that groups the goods together. Note that groups within one consignment cannot be split, they are always part of the same transported unit. If goods need or can be split they should be part of different consignments.
 
-On the top of the chain, we have the transport order, that is able to group multiple consignments. For example, because they are part of one assignment given by some shipper.
+On the top of the chain, we have the `transport order`, that is able to group multiple consignments. For example, because they are part of one assignment given by a shipper.
 
 This can be visualized as follows, where the grayed out entities, associations, events and actions are not relevant for this profile:
 
-![](/img/otm5_transport_order_profile.png)
+![](./otm5_transport_order_profile.png)
 
-The rules for the transport order profile are:
-- a transport order _must_ at least have one consignment.
-- A consignment _must_ have at least one goods item to be transported.
-- A consignment _must_ at least have one load action and one unload action. It _can_ have multiple if multiple trips are involved.
-- Every load and unload actions _must_ have a location.
-- All other fields are optional. For example, each consignment _can_ have a constraint determining between what time windows the goods need to be delivered.
+The minimal information requirements for a transport order include:
+- At least have one consignment
+- At least one goods item in a consignment to be transported
+- A consignment has at least have one load action and one unload action
+- Every load and unload action has a location specified
+- All other fields are optional. For example, each consignment can have constraints specifying the delivert time window
 
-Example
--------
+The full message specification of the Transport order profile is described here: [OTM Profile - Transport order v1](https://sutc.semantic-treehouse.nl/message-model/MessageModel_30ae15cb-f8d0-404a-8cd6-6cc57f0278fe).
+
+
+
+## Example
 
 Lets imagine we want to create a `transportOrder` for some evidence that needs to be transported from the police station
 headquarters to the investigation lab. The template starts out with a `transportOrder` that has some external ID, a description,
-and _empty_ actors and consignments:
+and empty `actors` and `consignments`:
 
 ```json
 {
@@ -389,152 +395,6 @@ And that's it! So the whole example becomes:
 }
 ```
 
-Validation Tool
----------------
+## Validation
 
-You can check the above rules for each involved entity using the following calls.
-
-**Consignments**
-
-To check whether your messages abide to the profile you can send a consignment to:
-
-`PUT https://otm5-documentation-api.services.simacan.com/api/v5/validate/consignments`
-
-For example, if you you send invalid JSON (there is a missing curly bracket after the UUID of goods).
-
-```
-{
-  "id":"89d45cf1-f3cd-4f60-98fd-50a4208c6b54",
-  "goods":[
-    {
-      "associationType":"reference",
-      "entityType":"goods",
-      "uuid":"89d45cf1-f3cd-4f60-98fd-50a4208c6b54"
-    
-  ]
-}
-```
-
-You will get the error message as a `400 Bad Request`:
-
-```
-[
-    "Encountered an error while parsing JSON: expected } or , got ] (line 10, column 245) at index 244"
-]
-```
-
-If you send valid JSON, but an invalid OTM you will be notified as well:
-
-```
-{
-    "id":"test",
-    "random": "message"
-}
-```
-
-returning
-
-```
-[
-    "An entity id must end with a UUID"
-]
-```
-
-Lastly, its possible that you send valid Consignments, but not those that are expected in this profile:
-
-```
-{
-  "id":"89d45cf1-f3cd-4f60-98fd-50a4208c6b54",
-  "actions":[
-    {
-      "associationType":"inline",
-      "entity":{
-        "id":"89d45cf1-f3cd-4f60-98fd-50a4208c6b54",
-        "actionType":"unload"
-      }
-    }
-  ]
-}
-```
-
-This will return the list of error messages:
-
-```
-{
-    "errors": [
-        {
-            "field": "goods",
-            "message": "consignments are expected to contain at least one goods item",
-            "type": "missingField"
-        },
-        {
-            "field": "actions",
-            "message": "List actions has size 1 but required at least 2",
-            "type": "invalidField"
-        }
-    ]
-}
-```
-
-Here is an example of a valid consignment. You can also see the use of inline and reference associations.
-
-```
-{
-  "id":"89d45cf1-f3cd-4f60-98fd-50a4208c6b54",
-  "goods":[
-    {
-      "uuid":"89d45cf1-f3cd-4f60-98fd-50a4208c6b54",
-      "entityType":"goods",
-      "associationType":"reference"
-    }
-  ],
-  "actions":[
-    {
-      "entity":{
-        "id":"89d45cf1-f3cd-4f60-98fd-50a4208c6b54",
-        "location":{
-          "uuid":"47bd36fa-9f15-4f5d-ab07-6eff4f11b846",
-          "entityType":"location",
-          "associationType":"reference"
-        },
-        "actionType":"load"
-      },
-      "associationType":"inline"
-    },
-    {
-      "entity":{
-        "id":"049ffbc8-b561-4b50-b82f-49854c4148da",
-        "location":{
-          "entity":{
-            "id":"1662d54f-2031-4a55-b790-2b7715701640",
-            "geoReference":{
-              "lat":52.092995,
-              "lon":5.1237933,
-              "type":"latLonPointGeoReference"
-            }
-          },
-          "associationType":"inline"
-        },
-        "startTime":"2021-01-17T10:00:00Z",
-        "endTime":"2021-01-17T10:15:00Z",
-        "actionType":"unload"
-      },
-      "associationType":"inline"
-    }
-  ]
-}
-```
-
-**TransportOrders**
-
-To check whether your messages abide to the profile you can send a transport order to:
-
-`PUT https://otm5-documentation-api.services.simacan.com/api/v5/validate/transportOrders`
-
-The error message systems works the same as for the consignments. There is only on rule for transport orders, which is that there needs to be at least one consignment.
-
-**Goods**
-
-Goods have many optional fields, and there none that are required for the transport order profile. So, as long as you send a valid Goods according to the specification below it will be accepted.
-
-`PUT https://otm5-documentation-api.services.simacan.com/api/v5/validate/goods`
+You can use the [Validator](../developers/validation) to validate your implementation according to the OTM profile specification.

@@ -1,10 +1,6 @@
 School Zones
 ============
 
-:::warning
-This profile is still a work in progress.
-:::
-
 Overview
 ------
 School Zones in OpenTripModel are critical areas intended to ensure the safety and efficient flow of traffic around educational institutions. These zones encompass various measures aimed at enhancing safety, such as speed limits, designated drop-off and pick-up points, and additional signage to alert drivers of the presence of children. Just as roadworks improve road conditions, School Zones contribute to safer road environments for students, parents, and commuters alike.

@@ -1,12 +1,8 @@
 FMS-ITS 
 ======================
 
-:::warning
-This profile is still a work in progress.
-:::
-
 :::caution
-FMS ITs is an implementation of the FMS profile. It uses OTM5 for communication between
+FMS ITS is an implementation of the FMS profile. It uses OTM5 for communication between
 companies. At the moment it contains more data than is available in OTM5. We are
 working together to smooth things out and see where the OTM5 standard needs
 additions and where the implementation needs updates. So note that not
@@ -17,7 +13,7 @@ everything within the FMS ITS is OTM5.
 Overview
 --------
 
-This is an implementation of the [FMS profile](fms.md)
+This is an implementation of the [FMS profile](../OTM_profiles/fms.md)
 
 With ITS services, truck drivers can get in-truck real-time information about
 dangerous situations, speed limits, lane closures, events, closed bridges,
