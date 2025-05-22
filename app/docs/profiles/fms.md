@@ -20,7 +20,7 @@ Within transport processes start with defining `consignments` that need to be de
 
 Currently the scope of this profile only contains the GPS updates, but it will also incorporate other sensor data (such as temperature, road situtations, traffic jams, etc.) later once we have a more solid grip on how to model it in OTM.
 
-One available implementation of this profile is the [FMS ITS example](../Examples/fms-its.md).
+One available implementation of this profile is the [FMS ITS example](../examples/fms-its.md).
 
 ## Profile structure
 
@@ -40,7 +40,7 @@ Google's own [page](https://developers.google.com/protocol-buffers/) uses the fo
 
 As a next step we will create an official `LocationUpdateEvent` Protobuf schema and make it available here.
 
-Profobuf is also used in the [FMS ITS example](../Examples/fms-its.md).
+Profobuf is also used in the [FMS ITS example](../examples/fms-its.md).
 
 ## Example
 
