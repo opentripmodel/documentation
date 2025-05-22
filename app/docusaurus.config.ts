@@ -1,7 +1,7 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
-// import type * as Redocusaurus from 'redocusaurus';
+import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
 
 const config: Config = {
   title: "Open Trip Model",
@@ -31,6 +31,8 @@ const config: Config = {
     locales: ["en"],
   },
 
+  themes: ["docusaurus-theme-openapi-docs"],
+
   presets: [
     [
       "classic",
@@ -55,26 +57,43 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
-    // [
-    //   'redocusaurus',
-    //   {
-    //     // Plugin Options for loading OpenAPI files
-    //     specs: [
-    //       // Pass it a path to a local OpenAPI YAML file
-    //       {
-    //         // Redocusaurus will automatically bundle your spec into a single file during the build
-    //         spec: 'api/OTM_OAS.yaml',
-    //         route: '/docs/api/',
-    //       },
-    //     ],
-    //     // Theme Options for modifying how redoc renders them
-    //     theme: {
-    //       // Change with your site colors
-    //       primaryColor: '#1890ff',
-    //     },
-    //   },
-    // ] satisfies Redocusaurus.PresetEntry,
   ],
+
+  // plugins: [
+  //   // We introduce a second Docusaurus docs content to publish the generated API docs
+  //   [
+  //     "@docusaurus/plugin-content-docs",
+  //     {
+  //       id: "api",
+  //       path: "api-docs",
+  //       routeBasePath: "api",
+  //       docItemComponent: "@theme/ApiItem",
+  //       // sidebarPath: './sidebarsCommunity.js',
+  //       // ... other options
+  //     },
+  //   ],
+  //   // The plugin below generates the API docs
+  //   // Run `yarn docusaurus gen-api-docs all` to generate to the specified output dir 'api-docs'
+  //   // The docs plugin above will serve those generated docs
+  //   [
+  //     "docusaurus-plugin-openapi-docs",
+  //     {
+  //       id: "api",
+  //       docsPluginId: "classic",
+  //       config: {
+  //         otm: {
+  //           specPath: "api/otm-api-v5.6.yaml",
+  //           hideSendButton: true,
+  //           showExtensions: false,
+  //           outputDir: "api-docs",
+  //           sidebarOptions: {
+  //             groupPathsBy: "tagGroup",
+  //           },
+  //         } satisfies OpenApiPlugin.Options,
+  //       },
+  //     },
+  //   ],
+  // ],
 
   themeConfig: {
     // Replace with your project's social card
