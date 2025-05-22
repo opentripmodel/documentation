@@ -3,9 +3,9 @@ title: API Specification
 sidebar_position: 7
 ---
 
- The Open Trip Model (OTM) is supported by a comprehensive OpenAPI Specification (OAS) that outlines the structure and requirements for implementing OTM in your applications. The OAS provides developers with detailed guidelines on how to interact with OTM services, ensuring consistent communication and data exchange across logistics systems.
- 
- See the [API](/api) page for the most recent and previous versions of the OTM API specification.
+The Open Trip Model (OTM) is supported by a comprehensive OpenAPI Specification (OAS) that outlines the structure and requirements for implementing OTM in your applications. The OAS provides developers with detailed guidelines on how to interact with OTM services, ensuring consistent communication and data exchange across logistics systems.
+
+See the [API](/api) page for the most recent and previous versions of the OTM API specification.
 
 ---
 More information
