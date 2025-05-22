@@ -13,7 +13,7 @@ everything within the FMS ITS is OTM5.
 Overview
 --------
 
-This is an implementation of the [FMS profile](../OTM_profiles/fms.md)
+This is an implementation of the [FMS profile](../profiles/fms.md)
 
 With ITS services, truck drivers can get in-truck real-time information about
 dangerous situations, speed limits, lane closures, events, closed bridges,

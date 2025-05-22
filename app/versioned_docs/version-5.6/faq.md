@@ -44,7 +44,7 @@ Frequently Asked Questions
   > Whenever you look at a hierarchy of entities. Such as a trip, containing stops, containing locations and various sub-actions such as loading and unloading
   consignments you can see that each entity is wrapped in what is called an _association_. These assocaitions are useful because sometimes we want to provide
   the information completely (association type inline), and sometimes we just want to refer to an existing entity (association type reference). This allows you
-  to choose whatever is suited for your operation. See also [this dedicated page](./Fundamentals/associations) about
+  to choose whatever is suited for your operation. See also [this dedicated page](./fundamentals/associations) about
   associations.
 
 * _How can you deal with layered data about the load carriers and the goods contained in them?_
@@ -64,4 +64,4 @@ Frequently Asked Questions
   being loaded and unloaded. Thus an action needs to be able to refer to the consignment. However, when we look at those same consignments from
   a _track and trace_ perspective we often follow a _single_ consignment that can be part of multiple trips before arriving at its final destination. Thus
   a consignment contains _all_ load and unload actions in that use case. It can be a bit daunting at first, but we strongly believe that this allows us to
-  keep the specification fairly small while being useful for a wide range of use cases. See also the [overview](./Fundamentals/fundamentals) for more information.
+  keep the specification fairly small while being useful for a wide range of use cases. See also the [overview](./fundamentals/fundamentals) for more information.

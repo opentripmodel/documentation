@@ -1,6 +1,6 @@
 ---
 title: OTM Profiles
-id: otm_profiles
+id: profiles
 ---
 
 OTM profiles
