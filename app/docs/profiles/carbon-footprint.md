@@ -11,7 +11,7 @@ This profile is still a work in progress.
 :::info
 The message models of OTM profiles are specified and maintained here: https://sutc.semantic-treehouse.nl/specifications
 
-Direct link to the DRAFT version [OTM Profile - Carbon Footprint](https://sutc.semantic-treehouse.nl/message-model/MessageModel_74ddde7e-578a-4790-b674-15274637d902)
+Direct link to the DRAFT versions OTM Profile - Carbon Footprint: [input](https://sutc.semantic-treehouse.nl/message-model-tree/Message_9e14bbd6-72fc-4942-915f-9c633bc95744?panes=element_tree:Message_9e14bbd6-72fc-4942-915f-9c633bc95744:ajgayz:primary) & [results](https://sutc.semantic-treehouse.nl/message-model-tree/Message_cd3ebf06-0da2-43c3-956e-1f6b75ea5981?panes=element_tree:Message_cd3ebf06-0da2-43c3-956e-1f6b75ea5981:wgyb5v:primary)
 :::
 
 
@@ -63,4 +63,4 @@ The profiles are modeled according to the principles of the Open Trip Model (OTM
 In addition to the OTM profiles described here, which are specifically aimed at the exchange of input and output data for CO₂ calculations in transport logistics, there are other (international) standards and initiatives relevant to the exchange of carbon footprint data. These can be complementary to the OTM profiles or have a broader scope. Some important examples are:
 
 - **IDTA Asset Administration Shell (AAS) - Submodel Carbon Footprint:** Standardizes the description and exchange of the [Product Carbon Footprint (PCF)](https://industrialdigitaltwin.org/wp-content/uploads/2024/01/IDTA-2023-0-9-_Submodel_CarbonFootprint.pdf), including the CO₂ impact of transport as part of the product life cycle. It defines, among other things, scope, methodology, and allocation.
-- **Digital Product Passports (DPP) & UN/CEFACT Transparency Protocol:** ESPR-driven Digital Product Passports require detailed product information, including CO₂ data. The UN/CEFACT Transparency Protocol ([https://uncefact.github.io/spec-untp/docs/specification/DigitalProductPassport/](https://uncefact.github.io/spec-untp/docs/specification/DigitalProductPassport/)) provides a framework for this. Data sharing initiatives such as Catena-X [LINK] apply this.
+- **Digital Product Passports (DPP) & UN/CEFACT Transparency Protocol:** ESPR-driven Digital Product Passports require detailed product information, including CO₂ data. The [UN/CEFACT Transparency Protocol](https://uncefact.github.io/spec-untp/docs/specification/DigitalProductPassport/) provides a framework for this. Data sharing initiatives such as [Catena-X](https://catena-x.net/) apply this.
