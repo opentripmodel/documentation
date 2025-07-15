@@ -16,6 +16,7 @@ This page contains a non-exhaustive list of companies that have adopted OTM. It 
 | ![](/img/logos/Data2Track.jpg) | Data2Track | IT | Fleet Management System | interface TMS-FMS | https://www.d2t.nl/ |
 | ![](/img/logos/Filogic.png) | FiLogic | IT | Open TMS | TMS - FMS / TMS - TMS interface  | https://filogic.nl/ |
 | ![](/img/logos/hessing-logistiek-logo.jpg) | Hessing Logistiek | Logistic Service Provider |TMS | CBS enquete |https://www.hessinglogistiek.nl/ |
+| ![](/img/logos/Interlogic.png) | Interlogic | Logistic Service Provider | TMS | | http://inter-logic.eu/ |
 | ![](/img/logos/MobiCoachM.png) | MobiCoach | IT | Fleet Management System | FMS - Traffic Management / DefLOG | https://www.mobicoach.eu/ |
 | ![](/img/logos/RGB.JPG) | RGBPlus | IT | Transport Management System |TMS - control tower interface | https://www.rgbplus.nl/ |
 | ![](/img/logos/derooy.png) | de Rooy Transport Logistiek | Logistic Service Provider |TMS | CBS enquete |https://derooytransport.nl/ |
