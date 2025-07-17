@@ -21,7 +21,7 @@ The exchange of CO₂ information in the transport sector is becoming increasing
 
 For the calculation of CO₂ emissions, the **Greenhouse Gas (GHG) Protocol** is the most widely accepted protocol globally. Various specific calculation methods (such as EN 16258 and the GLEC Framework) build upon this. The details of these calculation methods are outside the scope of this OTM profile. This profile focuses on the standardized exchange of the necessary input data to perform CO₂ calculations and the final end result.
 
-This OTM profile will contribute to transparency regarding how emissions are calculated and what the exact scope of the calculation is. Transparency is essential because many factors are involved in the calculation, and insight into these is crucial for correct interpretation and comparability of the CO2 emissions.
+This OTM profile will contribute to transparency regarding how emissions are calculated and what the exact scope of the calculation is. Transparency is essential because many factors are involved in the calculation, and insight into these is crucial for correct interpretation and comparability of the CO₂ emissions.
 
 ## Scope OTM Profile
 
@@ -37,7 +37,7 @@ The sequence diagram below visualizes the information flows between the carrier'
 ![](./sequence-diagram-carbon-footprint.png)
 
 
-Reporting CO2 emissions to the customer is **out of scope** for these OTM profiles. This could potentially be communicated on the invoice. Note: this data would be at the item level (under ""[ITEM ATTRIBUTES](https://stpe.semantic-treehouse.nl/message-model-tree/Message_1528564716_00391504?panes=element_tree:Message_1528564716_00391504:zst27c:primary&details=element:Element_1528564930_00038185:zst27c)"), not the trip level, which means a calculation is required.
+Reporting CO₂ emissions to the customer is **out of scope** for these OTM profiles. This could potentially be communicated on the invoice. Note: This would require allocating the trip-level emissions to the consignment or item level (under ""[ITEM ATTRIBUTES](https://stpe.semantic-treehouse.nl/message-model-tree/Message_1528564716_00391504?panes=element_tree:Message_1528564716_00391504:zst27c:primary&details=element:Element_1528564930_00038185:zst27c)") on the invoice, a process that is outside the scope of this profile.
 
 ## Foundation for CO₂ profiles
 
@@ -48,16 +48,15 @@ This analysis forms the direct basis for the structure and content of the OTM pr
 The detailed information requirements, as established by DALTI, can be found here: <a href="/documents/DALTI_Uniforme_kernset_CO2e.xlsx" target="_blank">DALTI CO₂ information needs</a>
 
 
-## OTM Profile Structure - **To be filled**
+## OTM Profile Structure 
 
-The detailed structure of both OTM profiles is maintained and can be consulted via the SUTC Semantic Treehouse. Both profiles are nearly identical. They're based on `trip` data, and the CO₂ calculation results repeat all input information while adding the final outcomes.
+The profiles are built around the standard OTM `trip` object. The Input Profile uses the `trip` as its root element, detailing the journey through sub-elements like `actions` (move, load, unload), `actors` (parties involved), and `contextEvents` (e.g., fuel consumption events). The Result Profile extends this input structure, adding specific fields within `contextEvents` or other relevant sections to hold the calculated CO₂ emissions.
+
 
 - **Link to OTM Profile - CO₂ Calculation Input:**  [link](https://sutc.semantic-treehouse.nl/message-model-tree/Message_9e14bbd6-72fc-4942-915f-9c633bc95744?panes=element_tree:Message_9e14bbd6-72fc-4942-915f-9c633bc95744:y700pg:primary)
     
 - **Link to OTM Profile - CO₂ Emissions Output:**  [link](https://sutc.semantic-treehouse.nl/message-model-tree/Message_cd3ebf06-0da2-43c3-956e-1f6b75ea5981?panes=element_tree:Message_cd3ebf06-0da2-43c3-956e-1f6b75ea5981:znyahv:primary)
     
-The profiles are modeled according to the principles of the Open Trip Model (OTM) and use standard OTM entities where possible, supplemented with specific extensions for CO₂-related data.
-
 ## Relation to other standards
 
 In addition to the OTM profiles described here, which are specifically aimed at the exchange of input and output data for CO₂ calculations in transport logistics, there are other (international) standards and initiatives relevant to the exchange of carbon footprint data. These can be complementary to the OTM profiles or have a broader scope. Some important examples are:
