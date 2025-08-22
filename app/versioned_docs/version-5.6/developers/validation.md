@@ -6,7 +6,7 @@ To validate messages against the Open Trip Model (OTM), users can utilize the Va
 
 How does it work?
 ---
-1. **Log in to STH:** Go to [Semantic Treehouse (STH)](https://www.semantic-treehouse.nl/) and log in using your preferred method.
+1. **Log in to STH:** Go to [Semantic Treehouse (STH)](https://sutc.semantic-treehouse.nl/) and log in using your preferred method.
 
 2. **Navigate to Validator:** Click on Validator in the sidebar on the left.
 
