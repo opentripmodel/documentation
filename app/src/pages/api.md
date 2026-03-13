@@ -7,11 +7,12 @@ The OTM API is specified according to the [OpenAPI specification (OAS)](https://
 
 The different versions can be downloaded in YAML format below. Source files are maintained in [otm5-change-requests](https://github.com/opentripmodel/otm5-change-requests) Github repository.
 
-To view the generated documentation of the latest OTM API specification, please visit: https://otm-api-spec.redocly.app/
+To view the generated documentation of the latest OTM API specification, please visit: [Generated API documentation](https://otm5.opentripmodel.org/)
 
 
 | Version | Download |
 | ------- | -------- |
+| v5.8 | [otm-api-v5.8.yaml](https://raw.githubusercontent.com/opentripmodel/otm5-change-requests/refs/heads/main/otm-api/otm-api-v5.8.yaml) |
 | v5.7 | [otm-api-v5.7.yaml](https://raw.githubusercontent.com/opentripmodel/otm5-change-requests/refs/heads/main/otm-api/otm-api-v5.7.yaml) |
 | v5.6 | [otm-api-v5.6.yaml](https://raw.githubusercontent.com/opentripmodel/otm5-change-requests/refs/heads/main/otm-api/otm-api-v5.6.yaml) |
 | v5.4 | [otm-api-v5.4.yaml](https://raw.githubusercontent.com/opentripmodel/otm5-change-requests/refs/heads/main/otm-api/otm-api-v5.4.yaml) |
