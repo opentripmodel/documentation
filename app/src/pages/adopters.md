@@ -23,7 +23,7 @@ This page contains a non-exhaustive list of companies that have adopted OTM. It 
 | ![](/img/logos/schiphol-cargo.png) | Schiphol, Cargo | Community Platform Service Provider | Secure import (pick-up) and eLink (drop-off) | Data exchange with ground handler locations for pick-up and drop-off | https://cargonaut.nl/diensten |
 | ![](/img/logos/simacan-logo.jpg)| Simacan | IT |supply chain visibility & control platform | ETAs, trip planning updates and realisation data |https://www.simacan.com |
 | ![](/img/logos/squid.png) | Squid | IT | Squid Truckplanning, Squid Geocoder, Squid OSRM Truckrouting | TMS interfacing | https://squid.software/ |
-| ![](/img/logos/tans_logo_transparant.png) | TANS | IT | Transport Management System |TMS - TMS interface | https://www.tans.net |
+| ![](/img/logos_contributors/logo-TANS.png) | TANS | IT | Transport Management System |TMS - TMS interface | https://www.tans.net |
 | ![](/img/logos/transportial-logo.jpg) | Transportial | IT | Transport Management System |TMS based on OTM | https://www.transportial.com |
 | ![](/img/logos/VOICT.jpg) | VOICT IT | IT | Transport Management System | TMS - control tower | https://voict.nl/|
 | ![](/img/logos/VTSTransport.jpg) | VTS Transport | Logistic Service Provider |TMS | CBS enquete |https://www.vts.nl/ |
