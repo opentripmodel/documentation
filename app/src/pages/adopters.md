@@ -1,6 +1,7 @@
 ---
 title: Adopters
 ---
+# Adopters & contributors
 
 ## OTM Adopters
 
@@ -26,6 +27,7 @@ This page contains a non-exhaustive list of companies that have adopted OTM. It 
 | ![](/img/logos_contributors/logo-TANS.png) | TANS | IT | Transport Management System |TMS - TMS interface | https://www.tans.net |
 | ![](/img/logos/transportial-logo.jpg) | Transportial | IT | Transport Management System |TMS based on OTM | https://www.transportial.com |
 | ![](/img/logos/VTSTransport.jpg) | VTS Transport | Logistic Service Provider |TMS | CBS enquete |https://www.vts.nl/ |
+
 
 
 ## Active contributors (OTM workgroup)

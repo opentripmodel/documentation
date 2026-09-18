@@ -123,7 +123,7 @@ const config: Config = {
         { to: "/api", label: "API", position: "left" },
         { to: "/docs/developers/", label: "Developers", position: "left" },
         // { to: "/blog", label: "Blog", position: "left" },
-        { to: "/adopters", label: "Adopters", position: "left" },
+        { to: "/adopters", label: "Adopters & contributors", position: "left" },
         {
           href: "https://sutc.semantic-treehouse.nl/",
           label: "STH",
