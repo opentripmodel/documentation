@@ -13,7 +13,7 @@ This page contains a non-exhaustive list of companies that have adopted OTM. It 
 | ![](/img/logos/Bricklog.jpg) | Bricklog | IT | dashboarding | CBS interface  | https://bricklog.nl/ |
 | ![](/img/logos/cbs.png) | CBS | Government | Statisctics | interface road haulage  | https://www.cbs.nl |
 | ![](/img/logos/Logo_Centric.png) | Centric | IT | TMS - WMS | Logistic Data Exchange | https://www.centric.eu/nl/ |
-| ![](/img/logos/Data2Track.jpg) | Data2Track | IT | Fleet Management System | interface TMS-FMS | https://www.d2t.nl/ |
+| ![](/img/logos/fleetgo.svg) | FleetGo | IT | Fleet Management System | interface TMS-FMS | https://fleetgo.nl/ |
 | ![](/img/logos/Filogic.png) | FiLogic | IT | Open TMS | TMS - FMS / TMS - TMS interface  | https://filogic.nl/ |
 | ![](/img/logos/hessing-logistiek-logo.jpg) | Hessing Logistiek | Logistic Service Provider |TMS | CBS enquete |https://www.hessinglogistiek.nl/ |
 | ![](/img/logos/Interlogic.png) | Interlogic | Logistic Service Provider | TMS | | http://inter-logic.eu/ |
@@ -25,9 +25,7 @@ This page contains a non-exhaustive list of companies that have adopted OTM. It 
 | ![](/img/logos/squid.png) | Squid | IT | Squid Truckplanning, Squid Geocoder, Squid OSRM Truckrouting | TMS interfacing | https://squid.software/ |
 | ![](/img/logos_contributors/logo-TANS.png) | TANS | IT | Transport Management System |TMS - TMS interface | https://www.tans.net |
 | ![](/img/logos/transportial-logo.jpg) | Transportial | IT | Transport Management System |TMS based on OTM | https://www.transportial.com |
-| ![](/img/logos/VOICT.jpg) | VOICT IT | IT | Transport Management System | TMS - control tower | https://voict.nl/|
 | ![](/img/logos/VTSTransport.jpg) | VTS Transport | Logistic Service Provider |TMS | CBS enquete |https://www.vts.nl/ |
-
 
 
 ## Active contributors (OTM workgroup)
@@ -41,8 +39,15 @@ Below is a table of organisations who made a contribution to the OpenTripModel s
 | ![](/img/logos_contributors/logo-TANS.png)| TANS | https://www.tans.net |
 | ![](/img/logos/transportial-logo.jpg) | Transportial | https://www.transportial.com |
 | ![](/img/logos/schiphol-cargo.png) | Schiphol, Cargo | https://cargonaut.nl/diensten |
-| ![](/img/logos_contributors/data2track-logo.png) | Data2Track | https://www.data2track.nl/ |
+| ![](/img/logos/fleetgo.svg) | FleetGo | IT | Fleet Management System | interface TMS-FMS | https://fleetgo.nl/ |
 
+
+## Partner organizations
+
+| Logo | Organization | Website |
+|------|---------|---------|
+| ![](/img/logos/evofenedex.png) | Evofenedex | https://www.evofenedex.nl/ |
+| ![](/img/logos/topsector-logistiek.svg) | Topsector Logistiek | https://topsectorlogistiek.nl/ |
 
 ## Previous contributors
 
