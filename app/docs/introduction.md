@@ -24,7 +24,7 @@ On this portal
 **Side Bar**
 
 1. **Fundamentals**  explains the core ideas and concepts of OTM. It contains an overview that shows which entities exist in the model and how they are related to each other.
-2. **OTM profiles** looks at different use cases and ensures that each of them get clear guidelines on how to be modelled in OTM.
+2. **OTM profiles** explains how OTM uses shared profile agreements to model specific exchange purposes without creating separate variants of the standard.
 3. **Usage Notes** look at how different functionalities within OTM can be used.
 4. **Example Messages** contain various examples as messages.
 2. **Validation** contains a guide on how validate your OTM messages using STH.
