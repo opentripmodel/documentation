@@ -32,7 +32,7 @@ An example of stop with both planned start and end times, as well as a constrain
 }
 ```
 
-You can interpret this that the stop is _planned_ to arrive at 10:30 and leaves again at 10:45. However, it _should_ arrival after 09:00 and leave againm before 12:00 according to the constraint.
+You can interpret this that the stop is _planned_ to arrive at 10:30 and leaves again at 10:45. However, it _should_ arrive after 09:00 and leave again before 12:00 according to the constraint.
 
 TimeWindowsConstraint vs StartDateTimeConstraint and EndDateTimeConstraint?
 ---------------------------------------------------------------------------

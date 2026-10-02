@@ -23,7 +23,7 @@ services are the collective name for the available smart applications that can
 be used in-truck.
 
 The use of these kinds of data leads to benefits for logistics companies,
-governments and society with regard to traffic flow, traffic flow, livability,
+governments and society with regard to traffic flow, livability,
 sustainability and the environment. 
 
 A standardized interface between logistics parties and ITS cloud service

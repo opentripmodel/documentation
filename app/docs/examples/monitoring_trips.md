@@ -15,7 +15,7 @@ The different phases of a trip are:
 
 ## General structure
 
-Monitoring trips is a complex operation that includes almost every entity and action within OTM, and was actually the primary reason for creating OTM. Looking at the original image from [OTM entities](../fundamentals/entities) we can see that for the monitoring trips profile, only the TransportOrder is not present. Everything that can be present in phase 1 is black, the additions for phase 2 are made purple, and the only addition for phase 3 is actual _proof of delivery_ using a HandOver made red. 
+Monitoring trips is a complex operation that includes almost every entity and action within OTM, and was actually the primary reason for creating OTM. Looking at the original image from [OTM entities](../fundamentals/entities) we can see that for the monitoring trips profile, only the TransportOrder is not present. The current diagram is shown in monochrome and combines the entities, events, and actions that can occur across the three phases, with actual _proof of delivery_ using a HandOver as the phase 3 addition.
 
 ![](/img/otm5_monitoring_trips_profile.png)
 

@@ -12,6 +12,7 @@ To view the generated documentation of the latest OTM API specification, please 
 
 | Version | Download |
 | ------- | -------- |
+| v5.9 | [otm-api-v5.9.yaml](https://raw.githubusercontent.com/opentripmodel/otm5-change-requests/refs/heads/main/otm-api/otm-api-v5.9.yaml) |
 | v5.8 | [otm-api-v5.8.yaml](https://raw.githubusercontent.com/opentripmodel/otm5-change-requests/refs/heads/main/otm-api/otm-api-v5.8.yaml) |
 | v5.7 | [otm-api-v5.7.yaml](https://raw.githubusercontent.com/opentripmodel/otm5-change-requests/refs/heads/main/otm-api/otm-api-v5.7.yaml) |
 | v5.6 | [otm-api-v5.6.yaml](https://raw.githubusercontent.com/opentripmodel/otm5-change-requests/refs/heads/main/otm-api/otm-api-v5.6.yaml) |
