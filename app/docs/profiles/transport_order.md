@@ -27,7 +27,7 @@ This can be visualized as follows, where the grayed out entities, associations, 
 The minimal information requirements for a transport order include:
 - At least have one consignment
 - At least one goods item in a consignment to be transported
-- A consignment has at least have one load action and one unload action
+- A consignment has at least one load action and one unload action
 - Every load and unload action has a location specified
 - All other fields are optional. For example, each consignment can have constraints specifying the delivert time window
 

@@ -18,7 +18,7 @@ Direct link to the DRAFT version [OTM Profile - TMS-FMS](https://sutc.semantic-t
 
 Within transport processes start with defining `consignments` that need to be delivered, which are eventually planned into `trips`. At some point the vehicle carrying the goods actually starts driving. Usually, some device (either the vehicle itself, or some separate device placed in the vehicle) will start emitting GPS updates of the current location at that point in time. To model this OTM5 contains the `LocationUpdateEvent` that contains this GPS update and the time of measuring. This is captured in the fleet management systems profile, also known as FMS profile.
 
-Currently the scope of this profile only contains the GPS updates, but it will also incorporate other sensor data (such as temperature, road situtations, traffic jams, etc.) later once we have a more solid grip on how to model it in OTM.
+Currently the scope of this profile only contains the GPS updates, but it will also incorporate other sensor data (such as temperature, road situations, traffic jams, etc.) later once we have a more solid grip on how to model it in OTM.
 
 One available implementation of this profile is the [FMS ITS example](../examples/fms-its.md).
 
