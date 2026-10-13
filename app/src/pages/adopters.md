@@ -18,14 +18,14 @@ This page contains a non-exhaustive list of companies that have adopted OTM. It 
 | ![](/img/logos/Filogic.png) | FiLogic | IT | Open TMS | TMS - FMS / TMS - TMS interface  | https://filogic.nl/ |
 | ![](/img/logos/hessing-logistiek-logo.jpg) | Hessing Logistiek | Logistic Service Provider |TMS | CBS enquete |https://www.hessinglogistiek.nl/ |
 | ![](/img/logos/Interlogic.png) | Interlogic | Logistic Service Provider | TMS | | http://inter-logic.eu/ |
-| ![](/img/logos/MobiCoachM.png) | MobiCoach | IT | Fleet Management System | FMS - Traffic Management / DefLOG | https://www.mobicoach.eu/ |
+| ![](/img/logos/MobiCoachM.png) | MobiCoach | IT | Fleet Management System | FMS - Traffic Management / DefLOG, TMS-FMS | https://www.mobicoach.eu/ |
 | ![](/img/logos/RGB.JPG) | RGBPlus | IT | Transport Management System |TMS - control tower interface | https://www.rgbplus.nl/ |
 | ![](/img/logos/derooy.png) | de Rooy Transport Logistiek | Logistic Service Provider |TMS | CBS enquete |https://derooytransport.nl/ |
 | ![](/img/logos/schiphol-cargo.png) | Schiphol, Cargo | Community Platform Service Provider | Secure import (pick-up) and eLink (drop-off) | Data exchange with ground handler locations for pick-up and drop-off | https://cargonaut.nl/diensten |
 | ![](/img/logos/simacan-logo.jpg)| Simacan | IT |supply chain visibility & control platform | ETAs, trip planning updates and realisation data |https://www.simacan.com |
 | ![](/img/logos/squid.png) | Squid | IT | Squid Truckplanning, Squid Geocoder, Squid OSRM Truckrouting | TMS interfacing | https://squid.software/ |
 | ![](/img/logos_contributors/logo-TANS.png) | TANS | IT | Transport Management System |TMS - TMS interface | https://www.tans.net |
-| ![](/img/logos/transportial-logo.jpg) | Transportial | IT | Transport Management System |TMS based on OTM | https://www.transportial.com |
+| ![](/img/logos/transportial-logo-vertical.svg) | Transportial | IT | TMS provider / data platform |TMS based on OTM, integration hub | https://www.transportial.com |
 | ![](/img/logos/VTSTransport.jpg) | VTS Transport | Logistic Service Provider |TMS | CBS enquete |https://www.vts.nl/ |
 
 
@@ -39,7 +39,7 @@ Below is a table of organisations who made a contribution to the OpenTripModel s
 | ![](/img/logos_contributors/simacan.png) | Simacan | https://www.simacan.com |
 | ![](/img/logos_contributors/filogic.jpg) | FiLogic | https://filogic.nl |
 | ![](/img/logos_contributors/logo-TANS.png)| TANS | https://www.tans.net |
-| ![](/img/logos/transportial-logo.jpg) | Transportial | https://www.transportial.com |
+| ![](/img/logos/transportial-logo-vertical.svg) | Transportial | https://www.transportial.com |
 | ![](/img/logos/schiphol-cargo.png) | Schiphol, Cargo | https://cargonaut.nl/diensten |
 | ![](/img/logos/fleetgo.svg) | FleetGo | IT | Fleet Management System | interface TMS-FMS | https://fleetgo.nl/ |
 

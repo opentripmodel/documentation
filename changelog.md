@@ -3,6 +3,9 @@
 The OTM standard is versioned, for the codebase of this documentation no separate versioning is needed.
 This changelog containts a list of chronological changes.
 
+### 2026-10-13
+* Logo and info updates on adopters page
+
 ### 2026-10-02
 * Added OTM v5.9 api specification
 * Updated and restructures adopters and contributors page
