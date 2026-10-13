@@ -4,7 +4,8 @@ The OTM standard is versioned, for the codebase of this documentation no separat
 This changelog containts a list of chronological changes.
 
 ### 2026-10-13
-* Logo and info updates on adopters page + add DALTI
+* Logo and info updates on adopters page + add DALTI, TLN and TNO
+* Redesign adopters and contributors page
 
 ### 2026-10-02
 * Added OTM v5.9 api specification

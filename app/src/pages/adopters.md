@@ -14,7 +14,7 @@ This page contains a non-exhaustive list of companies that have adopted OTM. It 
 In alphabetical order:
 
 <div class="adopters-grid">
-	<a class="adopter-card" href="https://www.adabt.com/nl/" target="_blank" rel="noopener noreferrer">
+	<a class="adopter-card" href="https://www.adabt.com" target="_blank" rel="noopener noreferrer">
 		<AdopterLogo src="/img/logos/adapt-logo.jpg" alt="Adabt logo" />
 		<strong>Adabt</strong>
 		<span>Interfacing for transport orders and CBS enquete</span>
@@ -24,7 +24,7 @@ In alphabetical order:
 		<strong>App2track</strong>
 		<span>App Transport &amp; Home Delivery for Track &amp; Trace</span>
 	</a>
-	<a class="adopter-card" href="https://bricklog.nl/" target="_blank" rel="noopener noreferrer">
+	<a class="adopter-card" href="https://www.bricklog.nl" target="_blank" rel="noopener noreferrer">
 		<AdopterLogo src="/img/logos/Bricklog.jpg" alt="Bricklog logo" />
 		<strong>Bricklog</strong>
 		<span>Dashboarding for the CBS interface</span>
@@ -48,11 +48,6 @@ In alphabetical order:
 		<AdopterLogo src="/img/logos/fleetgo.svg" alt="FleetGo logo" />
 		<strong>FleetGo</strong>
 		<span>Fleet Management System for TMS-FMS interfaces</span>
-	</a>
-	<a class="adopter-card" href="https://www.hessinglogistiek.nl/" target="_blank" rel="noopener noreferrer">
-		<AdopterLogo src="/img/logos/hessing-logistiek-logo.jpg" alt="Hessing Logistiek logo" />
-		<strong>Hessing Logistiek</strong>
-		<span>TMS support for the CBS enquete</span>
 	</a>
 	<a class="adopter-card" href="http://inter-logic.eu/" target="_blank" rel="noopener noreferrer">
 		<AdopterLogo src="/img/logos/Interlogic.png" alt="Interlogic logo" />
@@ -158,10 +153,20 @@ Below is an overview of organisations who actively contribute to the Open Trip M
 		<strong>Evofenedex</strong>
 		<span>Partner organization</span>
 	</a>
+	<a class="adopter-card" href="https://www.tln.nl/" target="_blank" rel="noopener noreferrer">
+		<AdopterLogo src="/img/logos/tln-logo.svg" alt="TLN logo" />
+		<strong>Transport Logistiek Nederland (TLN)</strong>
+		<span>Partner organization</span>
+	</a>
 	<a class="adopter-card" href="https://topsectorlogistiek.nl/" target="_blank" rel="noopener noreferrer">
 		<AdopterLogo src="/img/logos/topsector-logistiek.svg" alt="Topsector Logistiek logo" />
 		<strong>Topsector Logistiek</strong>
 		<span>Partner organization</span>
+	</a>
+	<a class="adopter-card" href="https://www.tno.nl" target="_blank" rel="noopener noreferrer">
+		<AdopterLogo src="/img/logos/TNO.png" alt="TNO logo" />
+		<strong>TNO</strong>
+		<span>Knowledge partner</span>
 	</a>
 </div>
 
