@@ -49,6 +49,7 @@ Below is a table of organisations who made a contribution to the OpenTripModel s
 
 | Logo | Organization | Website |
 |------|---------|---------|
+| ![](/img/logos/dalti-logo.svg) | DALTI | https://dalti.nl/ |
 | ![](/img/logos/evofenedex.svg) | Evofenedex | https://www.evofenedex.nl/ |
 | ![](/img/logos/topsector-logistiek.svg) | Topsector Logistiek | https://topsectorlogistiek.nl/ |
 
