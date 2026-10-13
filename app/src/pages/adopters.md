@@ -7,15 +7,17 @@ title: Adopters
 
 This page contains a non-exhaustive list of companies that have adopted OTM. It can be a great way to quickly see which companies are rapidly innovating and are in favor of open standards. Missing your name? You can provide it to info@sutc.nl together with a logo.
 
+In alphabetical order:
+
 | Logo                              | Company | Type of company | Applications     | Use cases | Website |
 |-----------------------------------| --------| ----------------| -----------------|-----------|---------|
-| ![](/img/logos/app2track-logo.png)  | App2track  |  IT    |App Transport & Home Delivery | Track & Trace  | https://www.app2track.com |
 | ![](/img/logos/adapt-logo.jpg)  | Adabt   |  IT    |Interfacing | transport orders, CBS enquete  | https://www.adabt.com/nl/ |
+| ![](/img/logos/app2track-logo.png)  | App2track  |  IT    |App Transport & Home Delivery | Track & Trace  | https://www.app2track.com |
 | ![](/img/logos/Bricklog.jpg) | Bricklog | IT | dashboarding | CBS interface  | https://bricklog.nl/ |
 | ![](/img/logos/cbs.png) | CBS | Government | Statisctics | interface road haulage  | https://www.cbs.nl |
 | ![](/img/logos/Logo_Centric.png) | Centric | IT | TMS - WMS | Logistic Data Exchange | https://www.centric.eu/nl/ |
-| ![](/img/logos/fleetgo.svg) | FleetGo | IT | Fleet Management System | interface TMS-FMS | https://fleetgo.nl/ |
 | ![](/img/logos/Filogic.png) | FiLogic | IT | Open TMS | TMS - FMS / TMS - TMS interface  | https://filogic.nl/ |
+| ![](/img/logos/fleetgo.svg) | FleetGo | IT | Fleet Management System | interface TMS-FMS | https://fleetgo.nl/ |
 | ![](/img/logos/hessing-logistiek-logo.jpg) | Hessing Logistiek | Logistic Service Provider |TMS | CBS enquete |https://www.hessinglogistiek.nl/ |
 | ![](/img/logos/Interlogic.png) | Interlogic | Logistic Service Provider | TMS | | http://inter-logic.eu/ |
 | ![](/img/logos/MobiCoachM.png) | MobiCoach | IT | Fleet Management System | FMS - Traffic Management / DefLOG, TMS-FMS | https://www.mobicoach.eu/ |
@@ -29,19 +31,18 @@ This page contains a non-exhaustive list of companies that have adopted OTM. It 
 | ![](/img/logos/VTSTransport.jpg) | VTS Transport | Logistic Service Provider |TMS | CBS enquete |https://www.vts.nl/ |
 
 
-
 ## Active contributors (OTM workgroup)
 
 Below is a table of organisations who made a contribution to the OpenTripModel specification and documentation, in alphabetical order.
 
 | Logo | Company | Website |
 |------|---------|---------|
-| ![](/img/logos_contributors/simacan.png) | Simacan | https://www.simacan.com |
 | ![](/img/logos_contributors/filogic.jpg) | FiLogic | https://filogic.nl |
+| ![](/img/logos_contributors/simacan.png) | Simacan | https://www.simacan.com |
+| ![](/img/logos/fleetgo.svg) | FleetGo | IT | Fleet Management System | interface TMS-FMS | https://fleetgo.nl/ |
+| ![](/img/logos/schiphol-cargo.png) | Schiphol, Cargo | https://cargonaut.nl/diensten |
 | ![](/img/logos_contributors/logo-TANS.png)| TANS | https://www.tans.net |
 | ![](/img/logos/transportial-logo-vertical.svg) | Transportial | https://www.transportial.com |
-| ![](/img/logos/schiphol-cargo.png) | Schiphol, Cargo | https://cargonaut.nl/diensten |
-| ![](/img/logos/fleetgo.svg) | FleetGo | IT | Fleet Management System | interface TMS-FMS | https://fleetgo.nl/ |
 
 
 ## Partner organizations
