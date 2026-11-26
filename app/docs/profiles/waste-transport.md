@@ -51,7 +51,7 @@ The full message specification can be found in the SUTC [Semantic Treehouse Envi
 
 The **Planned trip** message is built around the OTM `Trip` element. This allows information about `vehicle`, `actors` and `actions` to be communicated. To specify the type of waste that is being disposed of, the `classificationLines` element within the `goods/entity` element can be used. The classification lines allow the TMS to communicate the EURAL code of the waste. 
 
-The **Weigh event** message has the root element of `weighEvent`. In this element, the sub-elements of `vehicle` and `weighingResult` can be communicated. The allowed values for `weighingType` are:
+The **Weigh Event** message has the root element of `weighEvent`. In this element, the sub-elements of `vehicle` and `weighingResult` can be communicated. The `references` element is used to link the weigh event back to the planned trip it belongs to, by referring to the `id` of that trip. The allowed values for `weighingType` are:
 * calibrated - Measurement from the calibrated weighing equipment of the waste processor;
 * manual - Data entered manually by the driver; or
 * tare - Weight from the known specifications of the empty vehicle.
@@ -191,7 +191,14 @@ Updates to a planned trip follow the regular OTM mechanisms; no profile-specific
         "remark": "Incoming weighing before unloading",
         "weighbridgeId": "WB-01",
         "weighbridgeSequenceNr": "2026-004582"
-    }
+    },
+    "references": [
+        {
+            "associationType": "reference",
+            "entityType": "trip",
+            "uuid": "b36fa58d-569a-49e3-bcaa-ebacb1120a35"
+        }
+    ]
 }
 ```
 
@@ -216,7 +223,14 @@ Updates to a planned trip follow the regular OTM mechanisms; no profile-specific
         "remark": "Outgoing weighing after unloading",
         "weighbridgeId": "WB-01",
         "weighbridgeSequenceNr": "2026-004583"
-    }
+    },
+    "references": [
+        {
+            "associationType": "reference",
+            "entityType": "trip",
+            "uuid": "b36fa58d-569a-49e3-bcaa-ebacb1120a35"
+        }
+    ]
 }
 ```
 
@@ -243,4 +257,4 @@ Although the functional scope is the same, the OTM profile is based on a differe
 * **Parties as actors with roles** - Parties in EBA are represented as `actors` in OTM, where the function of each party is expressed using `roles` (e.g. `shipper`).
 * **Waste classification** - The waste type (EURAL code) is specified on the goods using `classificationLines`, while hazardous substance information is captured in the `adr` element.
 * **Status and updates** - Changes to a planned transport are communicated by updating the same trip (same `id`) instead of sending a new document. See [Updates of planned trip](#updates-of-planned-trip).
-* **Weighing as an event** - A weighing confirmation is modelled as an OTM `weighEvent`: an occurrence at a specific moment in time, linked to the vehicle, with a `weighingResult` that explicitly states the `weighingType` (calibrated, manual or tare).
+* **Weighing as an event** - A weighing confirmation is modelled as an OTM `weighEvent`: an occurrence at a specific moment in time, linked to the vehicle and (via `references`) to the planned trip, with a `weighingResult` that explicitly states the `weighingType` (calibrated, manual or tare).
