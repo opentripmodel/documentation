@@ -1,7 +1,7 @@
 ---
 sidebar_label: DRAFT Waste transport
 ---
-# OTM Profile - Waste transport (f.k.a. EBA)
+# OTM Profile - Waste transport
 
 :::warning
 This profile is work in progress.
@@ -32,35 +32,40 @@ The profile enables the Transport Management System (TMS) of the transport organ
 
 The standard flow consists of three main exchanges:
 
-1. **Planned trip:** Before the transport takes place, the sends a planned trip message to the waste processor's system. The message describes the planned transport and includes information about the waste being transported, such as the applicable waste types. Furthermore, status change and updated information about the planned trip can be send to to the waste processor's system.
+1. **Planned trip:** Before the transport takes place, the transport organisation's TMS sends a planned trip message to the waste processor's system. The message describes the planned transport and includes information about the waste being transported, such as the applicable waste types. Furthermore, status changes and updated information about the planned trip can be sent to the waste processor's system.
 
 2. **Weigh event 1:** When the vehicle arrives at the waste processor and passes the weigh station, the waste processor's system sends a weigh event to the TMS. This event contains the measured total weight of the transport combination, including the vehicle and its load.
 
 3. **Weigh event 2:** After the waste has been unloaded, the vehicle passes the weigh station again. The waste processor's system sends another weigh event to the TMS containing the measured weight after unloading.
 
-Weighing results can be of type calibrated, manually or tare.
+Weighing results can be of type calibrated, manual or tare.
 
 The difference between the incoming and outgoing weighing results can be used to determine the weight of the waste that has been unloaded.
 
-![](./sequence-diagram-waste-disposal.png)
+![Sequence diagram waste transport](./sequence-diagram-waste-disposal.png)
 
 
 ## OTM Profile Structure
 
 The full message specification can be found in the SUTC [Semantic Treehouse Environment](https://sutc.semantic-treehouse.nl/).
 
-The **Planned Trip (EBA)** message is build around the OTM `Trip` element. This container allows `vehicle`, `actors` and `actions` be communicated. To specify the type of waste that is being disposed off, the `classificationLines` element within the `goods/entity` element can be used. The classification lines allows the TMS to communicate the EURAL code of the waste. 
+The **Planned trip** message is built around the OTM `Trip` element. This allows information about `vehicle`, `actors` and `actions` to be communicated. To specify the type of waste that is being disposed of, the `classificationLines` element within the `goods/entity` element can be used. The classification lines allow the TMS to communicate the EURAL code of the waste. 
 
-The **Weigh Event (EBA)** message has the root element of `weighEvent`. In this element, the sub-elements of `vehicle` and `weighingResult` can be communicated. When weighing the allowed `weighingType` are:
+The **Weigh event** message has the root element of `weighEvent`. In this element, the sub-elements of `vehicle` and `weighingResult` can be communicated. The allowed values for `weighingType` are:
 * calibrated - Measurement from the calibrated weighing equipment of the waste processor;
-* manual - Data entered manually from the chauffeur; or
+* manual - Data entered manually by the driver; or
 * tare - Weight from the known specifications of the empty vehicle.
 
-The manual and tare options are only available for the outgoing weigh event message. 
+## Updates of planned trip
 
-## Example
-The shape of these messegas are straightforward.
-### Planned Trip (EBA)
+Updates to a planned trip follow the regular OTM mechanisms; no profile-specific messages are needed:
+
+* **Updating information** - When planned information changes (e.g. another vehicle, time window or waste type), the TMS sends the complete, updated trip using the `PUT` endpoint of the OTM API for trips, with the same trip `id`. The waste processor's system replaces its previous version of the trip with the received one. See the [API specification](../developers/api_specification.md).
+* **Status changes** - The progress of the trip is communicated through its `status` (e.g. `confirmed`, `inTransit`, `completed`). A planned trip that will not take place is set to `cancelled`. The meaning of the status values and allowed transitions are explained in [Entity status](../fundamentals/entity_status.md).
+
+## Examples
+
+### Planned trip
 ```json
 {
     "entityType": "trip",
@@ -90,6 +95,7 @@ The shape of these messegas are straightforward.
         {
             "associationType": "inline",
             "entity": {
+                "id": "7c1e2b4a-3f5d-4e8a-9b6c-1d2e3f4a5b6c",
                 "actionType": "stop",
                 "location": {
                     "associationType": "inline",
@@ -100,7 +106,6 @@ The shape of these messegas are straightforward.
                             "name": "Example Waste Processing Facility",
                             "street": "Industrieweg",
                             "houseNumber": "25",
-                            "houseNumberAddition": "",
                             "postalCode": "7418 AA",
                             "city": "Deventer",
                             "country": "NL"
@@ -114,6 +119,7 @@ The shape of these messegas are straightforward.
                     {
                         "associationType": "inline",
                         "entity": {
+                            "id": "e4f5a6b7-c8d9-4e0f-a1b2-c3d4e5f6a7b8",
                             "actionType": "unload",
                             "consignment": {
                                 "associationType": "inline",
@@ -125,7 +131,7 @@ The shape of these messegas are straightforward.
                                                 "entityType": "goods",
                                                 "type": "items",
                                                 "id": "db9f02c3-6944-4781-b1a0-9390623387d6",
-                                                "name": "Mixed construction and demolition waste",
+                                                "name": "Mixed construction and demolition waste containing hazardous substances",
                                                 "quantity": 1,
                                                 "weight": {
                                                     "value": 12450,
@@ -138,7 +144,7 @@ The shape of these messegas are straightforward.
                                                 },
                                                 "classificationLines": [
                                                     {
-                                                        "euralCode": "170904"
+                                                        "euralCode": "170903*"
                                                     }
                                                 ]
                                             }
@@ -164,7 +170,7 @@ The shape of these messegas are straightforward.
 
 ```
 
-### Weight Event (EBA)
+### Weigh event (incoming)
 ```json
 {
     "eventType": "weighEvent",
@@ -189,6 +195,33 @@ The shape of these messegas are straightforward.
 }
 ```
 
+### Weigh event (outgoing)
+```json
+{
+    "eventType": "weighEvent",
+    "id": "a8d3c2e1-5b47-4f6a-8c9d-0e1f2a3b4c5d",
+    "creationDate": "2026-11-06T10:27:19+01:00",
+    "vehicle": {
+        "associationType": "inline",
+        "entity": {
+            "licensePlate": "BB-01-BB"
+        }
+    },
+    "weighingResult": {
+        "weighingType": "tare",
+        "weight": {
+            "value": 16290,
+            "unit": "kg"
+        },
+        "remark": "Outgoing weighing after unloading",
+        "weighbridgeId": "WB-01",
+        "weighbridgeSequenceNr": "2026-004583"
+    }
+}
+```
+
+The net weight of the unloaded waste in this example is 28740 kg - 16290 kg = 12450 kg.
+
 ## Migrating from EBA v1.2 to OTM profile
 
 Organisations that already have an implementation of EBA v1.2 do not have to start from scratch. Mapping specifications are available that describe, element by element, how the EBA v1.2 messages relate to the messages of the OTM profile for waste transport:
@@ -209,5 +242,5 @@ Although the functional scope is the same, the OTM profile is based on a differe
 * **Trip as central concept** - Instead of a pre-notification document, the transport is described as an OTM `Trip` consisting of `actions`. The visit to the waste processor is modelled as a `stop` action with a `location`, a time window, and a nested `unload` action that carries the consignment and goods.
 * **Parties as actors with roles** - Parties in EBA are represented as `actors` in OTM, where the function of each party is expressed using `roles` (e.g. `shipper`).
 * **Waste classification** - The waste type (EURAL code) is specified on the goods using `classificationLines`, while hazardous substance information is captured in the `adr` element.
-* **Status and updates** - Changes to a planned transport are communicated by sending the same trip (same `id`) with updated information and/or an updated [status](../fundamentals/entity_status.md), following the OTM [lifecycle](../fundamentals/lifecycles.md) concepts.
+* **Status and updates** - Changes to a planned transport are communicated by updating the same trip (same `id`) instead of sending a new document. See [Updates of planned trip](#updates-of-planned-trip).
 * **Weighing as an event** - A weighing confirmation is modelled as an OTM `weighEvent`: an occurrence at a specific moment in time, linked to the vehicle, with a `weighingResult` that explicitly states the `weighingType` (calibrated, manual or tare).
